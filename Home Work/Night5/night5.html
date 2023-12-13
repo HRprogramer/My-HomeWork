@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Night5</title>
+    </head>
+    <body>
+        
+        <!-- header -->
+        <header>
+            <h2>Audio & Video tags</h2>
+            <ul>
+                <li><a href="#">Video</a></li>
+                <li><a href="#">Audie</a></li>
+                <li><a href="#">Datalist</a></li>
+            </ul>
+        </header>
+
+        <!-- Audio tags -->
+        <section>
+            <h3>Audio tags</h3>
+            <p>The tags that we use to place the audio file in the site.</p>
+            <ul>
+                <li>audio tag:</li>
+                <p>            
+                    [audio controls] <br>
+                    [source src="/Audio/Ringtone/Ringtone33.mp3" type="audio/mp3">
+                    [source src="/Audio/Ringtone/Ringtone33.ogg" type="audio/ogg"><br>
+                    <sup>*1*</sup>The audio file is not executable!! <br>
+                    [/audio>
+                </p>
+                <p>*To display the codes, I used the ( [ ) sign instead of the ( < )sign.*</p>
+                <br>
+            </ul>
+            <p>For example:</p>
+            <div>
+                <audio controls>
+                    <source src="/Audio/Ringtone/Ringtone33.mp3" type="audio/mp3">
+                    <source src="#" type="audio/ogg">
+                    The audio file is not executable!!
+                </audio>
+            </div>
+        </section>
+
+        <!-- Video tags -->
+        <section>
+            <h3>Video tags</h3>
+            <p>The tags that we use to place the video file in the site.</p> 
+            <ul>
+                <li>video tag:
+                    <p>
+                        [video controls>
+                        <br>
+                        [source src="/Video/Tir.mp4" type="video/mp4"> <br>
+                        [source src="/Video/Tir.ogg" type="video/ogg"> <br>
+                        <sup>*2*</sup>The video file is not executable!! <br>
+                        [/video>
+                        <br>
+                        <p>*To display the codes, I used the ( [ ) sign instead of the ( < )sign.*</p>
+                    </p>
+                </li>
+            </ul> 
+            <p>For example:</p> 
+            <div>
+                <video controls>
+                    <source src="/Video/Tir.mp4" type="video/mp4">
+                    <source src="#" type="video/ogg">
+                    The video file is not executable!! 
+                </video>
+            </div>     
+        </section>
+  
+        <!-- Datalist -->
+        <section>
+            <h3>Datalist</h3>
+            <p>To create a drop-down list, we use the following tags:</p>
+            <p>[input id="car" type="text" list="color" placeholder="Choose the color of the car"> <br>
+                [datalist id="color"><br><br>
+                    [option value="red"></option><br>
+                    [option value="gray"></option><br>
+                    [option value="pink"></option><br><br>
+                [/datalist>
+            </p>
+            <p>For example:</p>
+            <input id="car" type="text" list="color" placeholder="Choose the color of the car">
+            <datalist id="color">
+                <option value="red"></option>
+                <option value="gray"></option>
+                <option value="pink"></option>
+            </datalist>   
+            <p>**The<b> list </b> attribute value in the <b>input</b> tag should be equal to the <b>id</b> value in the <b>datalist</b> tag.</p> 
+        </section>
+
+        <!-- Attributes -->
+        <section>
+            <h3>Required Attributes</h3>
+            <table border="3px">
+                <tr bgcolor="darkgray">
+                    <th> Attributes</th>
+                    <th>Place of use</th>
+                    <th>Role</th>
+                    <th>Input value</th>
+                </tr>
+                <tr>
+                    <td align="Center">Controls</td>
+                    <td align="Center">Audio & Video tags </td>
+                    <td>A tool for better file playback</td>
+                    <td align="Center">Null</td>
+                </tr>
+                <tr>
+                    <td align="Center">SRC</td>
+                    <td>In the tag we use to play the file, such as (audio & img) tags.</td>
+                    <td>We put the file address in it.</td>
+                    <td align="Center">Address</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Footer -->
+        <hr><hr>
+        <ol>
+            <li>The message of not displaying the audio file.</li>
+            <li>The message of not displaying the video file.</li>
+        </ol>
+    </body>
+</html>
