@@ -1,0 +1,121 @@
+/* Comprehensive styles */
+ 
+body{
+    color: #5f5a5a;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+}
+
+header{
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+h1{
+    color: black;
+}
+
+li {
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+
+/* header style */
+
+.intro{
+    
+    font-size: 17px;
+    line-height: 1.8;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    
+}
+
+
+/* Body styles */
+
+.CB{
+
+    color: #0f80ea;
+}
+
+.CG{
+
+    color: rgb(8, 178, 28);
+}
+
+.CR{
+
+    color: #d21111;
+}
+
+.CBl{
+
+    color: black;
+}
+
+.LH{
+
+    line-height: 1.7;
+}
+
+
+
+
+#cr1{
+    text-transform: uppercase;
+    color: #d21111;
+}
+
+#cr2{
+    text-transform:capitalize;
+    color: #d21111;
+}
+
+#td1{
+    text-decoration:underline;
+}
+
+#td2{
+    text-decoration:overline ;
+}
+
+#td3{
+    text-decoration:line-through ;
+}
+
+#tsh{
+    color: black;
+    font-weight: bold;
+    text-shadow: 3px 2px 3px red;
+}
+
+#fs{
+    font-size: 20px;
+    color: black;
+}
+
+#ffc{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#bsh{
+    text-align: center;
+    width: 300px;
+    height : 70px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    box-shadow : 10px 5px 5px red ;
+}
+
+#test {
+
+    height : 100px ;
+    width: 200px;
+    border : 3px solid red ; 
+}
+

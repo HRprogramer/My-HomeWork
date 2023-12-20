@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Night7</title>
+    </head>
+
+    <body>
+
+        <!-- header  -->
+        <header>
+            <h1>properties</h1>
+            <p class="intro" >In this article, we are looking to learn more about family properties and how to use them.</p>
+            <br><br>
+        </header>
+        <hr>
+        <!-- Styling Text -->
+        <section>
+            <h1>Styling Text</h1>
+            <ol>
+
+                <li>Font-family</li>
+                <p>
+                    We can change the font of the text using the <b>font-family</b> property. <br>
+                    <b class="CG">Note</b>: If the font name consists of multiple words, it has to be in <b>double Quotation (" ")</b>. <br>
+                    For example: <br><br>
+
+                    <span class="CB">
+                        .test{ <br><br>
+                            font-family : Arial ;
+                            <br><br>
+                        }<br><br>                        
+                    </span>
+
+                    <b class="CG">Note</b> : Some browsers <b>do not support</b> a series of fonts, so if you want to use a font for your site, add other fonts. <br>
+                    for example: <br><br>
+
+                    <span class="CB">
+                        .test {<br><br>
+                            font-family : Arial , Helvetica , sans-serif ; <br><br>
+                        }  <br><br>                      
+                    </span>
+
+                    <b class="CG">Note</b> : Fonts that are in all systems(These are called <b>web safe</b> fonts) : 
+                    <b>Arial, Courier New, Georgia, Times New Roman, Trebuchet MS, Verdana .</b>
+                </p>
+                
+                <li>Font-style</li>
+                <p>
+                    The font style property is used to make text italic.
+                    <br><br>
+                    <span class="CB">
+                        .test {<br><br>
+                            font-style : italic ; <br><br>
+                        } <br>
+                    </span>
+
+                </p>
+
+                <li>Font-weight</li>
+                <p>
+                    The <b>font-weight</b> property is used to make the text bold.
+                    <br><br>
+                    <span class="CB">
+                        .test {<br><br>
+                            font-weight : bold ; <br><br>
+                        } <br>
+                    </span> <br>
+                    <b class="CG">Note</b>: We can define the font weight with a number from 100 (thin) to 900 (thick). 400
+                    is the same as <b>normal</b> , and 700 is the same as<b> bold </b>.
+                </p>
+            </ol>
+        </section>
+        <hr>
+        <!-- Font Styles -->
+        <section>
+            <h1>Font Styles</h1>
+            <ol>
+                <li>text transform</li>
+                <p class="LH">
+                    With the help of this property, we can convert the text to the following . <br>
+                    1. <b>uppercase: </b>Transforms the text to capitals. <br>
+                    2. <b>lowercase: </b>Transforms the text to lower case. <br>
+                    3. <b>capitalize: </b>Transforms all words to have the first letter capitalized. <br>For example:<br>
+                    <span class="CB">
+                        .test1 {<br>
+                        text-transform : uppercase ; <br>
+                        } <br><br>
+                        .test2 {<br>
+                        text-transform : capitalize ; <br>
+                        } <br>
+                        </span>
+                        Output: <br>
+                        (test1)<span id="cr1">I am a programmer!</span><br><br>
+                        (test2)<span id="cr2">I am a programmer!</span><br>
+                </p>
+                
+                <li>text decoration</li>
+                <p class="LH">
+                    The <b>text-decoration</b> property supports the following values: <br><br>
+                    1. <b>none:</b>  removes any decoration. -----» <span class="CR">I am a programmer</span><br> 
+                    2. <b>overline :</b>  gives the text an overline. -----» <span id="td2" class="CR">I am a programmer</span><br>
+                    3. <b>underline:</b>  underlines the text. -----» <span id="td1" class="CR">I am a programmer</span><br>
+                    4. <b> line-through:</b> puts a strikethrough over the text.-----» <span id="td3" class="CR">I am a programmer</span>
+                </p>
+
+                <li>text shadow</li>
+                <p>
+                    The <b>text-shadow</b> property allows you to set a shadow for the text. <br>
+                    This property requires <b>four</b> values: <br><br>
+                    1. The horizontal offset of the shadow. <br>
+                    2. The vertical offset. <br>
+                    3. The blur radius: a higher value means the shadow is dispersed more widely. <br>
+                    4. The color of the shadow. <br><br>
+                    For example: <br>
+                    <span class="CB">
+                        p { <br>
+                            text-shadow: 3px 2px 3px red; <br>
+                            } <br><br>                        
+                    </span>
+
+                    Output: <br><br>    
+                    <span id="tsh">This is a paragraph!</span><br><br>
+                    <b class="CG">Note</b>:We can add multiple shadows, by separating them with a <b>comma( , ) .</b><br>
+                    <span class="CB">
+                        p { <br>
+                            text-shadow: 3px 2px 3px red , 2px 2px 1px blue; <br>
+                            } <br><br>                        
+                    </span>
+                </p>
+
+
+                <li>text-align</li>
+                <p>
+                    The <b>text-align</b>  property is used to control how text is aligned within its container. <br>
+                    The values ​​that this property takes include: <b>{ left , right , center , justify }  </b><br><br>
+                    For example: <br>
+                    <span class="CB">
+                        .test{ <br><br>
+                            text-align : center ; <br><br>
+                        } <br> 
+                    </span>
+                    
+                </p>
+
+                <li>line-height</li>
+                <p>
+                    <b>line-height</b> property Determines the distance between lines and its input value is a <b>number</b>. <br>
+                    For example : <br>
+                    <span class="CB">
+                        .test{ <br><br>
+                            line-height : 1.8 ; <br><br>
+                        }
+                    </span>
+
+                </p>
+
+
+                <li>word-spacing & letter-spacing</li>
+                <p>
+                    They allow us to adjust the spacing <b>between words or letters</b> in our text .<br>
+                    For example: <br><br>
+                    <span class="CB">
+                        .test { <br><br>
+                        letter-spacing: 3px;<br>
+                        word-spacing: 3px; <br><br>
+                        }
+                    </span>
+                </p>
+            </ol>
+        </section>
+        <hr>
+        <!-- The box model -->
+        <section>
+            <h1>The box model</h1>
+            <p>
+            HTML elements appear as boxes. <br>
+            The box model defines how the different parts of the box. <br>
+            <b>margin , border , padding , and content</b> , work together to create the box. <br>
+            </p>
+
+            <p class="LH">
+                1. <b>border : </b> It is <ins>the walls</ins> of the box.<br>
+                2. <b>margin : </b> It is the same distance between <ins>the content</ins> section and <ins>the walls</ins> of the box.<br>
+                3. <b>padding : </b> The distance between <ins>the walls</ins> of the box and <ins>other elements</ins> is called margin.<br><br>
+            </p> 
+
+            <h2 id="fs">Further getting to know</h2>
+            <ul>
+                <li>weight</li>
+                <p>
+                    Determines the width of the box. <br>
+                    <span class="CB">
+                        .test { <br>
+                            weight : 200px ;<br>
+                        } <br>
+                    </span>
+                </p>
+                <li>height</li>
+                <p>
+                    Determines the length of the box. <br>
+                    <span class="CB">
+                        .test {<br>
+                            weight : 200 ;<br>
+                            height : 100 ;<br>
+                        } <br>                        
+                    </span>
+
+                </p>
+
+                <li>border</li>
+                <p>
+                    We define the walls of the box with it. <br>
+                    <b class="CG">Note</b> : Borders, like paddings and margins, have top & bottom & left and right sections. <br><br>
+                    This property requires three values to work: <br>
+                    <b>1. Border thickness : </b>(number) <br>
+                    <b>2.The border itself : </b>The border can be continuous (solid) or interrupted (dashed)<br>
+                    <b>3.color</b><br>
+                    For example: <br>
+                    <span class="CB">
+                        .test {<br> <br>
+                            weight : 200px ;<br>
+                            height : 100px ;<br>
+                            border : 3px solid red ; <br>
+                        } <br>                        
+                    </span>
+                    <h5>Output</h5>
+                    <div id="test">
+                        <span>
+                            Note the border.
+                        </span>
+                    </div>
+                    <b class="CG">Note </b> : The border will be invisible if its style is not defined. This is because the style defaults to none. <br>
+
+                </p>
+
+                <li>Box</li>
+                <p>
+                    All the <ins>contents</ins> of the site are inside the <ins>boxes</ins> that we can style these boxes with the help of <b>CSS</b>. <br>
+                    Two important terms: <br><br>
+                    <b>1. box-sizing</b> <br>
+                    The size of the box is determined in <b>two </b>ways: <br><br>
+                    <b>content-box :</b> gives you the default CSS <ins>box-sizing</ins> behavior. <br>
+                    If you set an element's width to 100 pixels, then the element's content box will be 100 pixels wide,
+                    <br>and the width of any border or padding will be added to the final rendered width, making the element wider than 100px. <br><br>
+                    <b>border-box :</b> tells the browser to account for any <ins>border</ins> and <ins>padding</ins> in the values you specify for an element's width and height. <br>
+                    If you set an element's width to 100 pixels, that 100 pixels will include any <ins>border</ins> or <ins>padding</ins> you added, and the content box will shrink to absorb that extra width. <br>
+                    <b id="ffc" class="CG">*This typically makes it much easier to size elements.*</b><br><br>
+                    <span class="CB">
+                        .test {<br>
+                            height: 200px;<br> 
+                            width: 500px;<br>
+                            box-sizing: border-box;<br>
+                        } <br>
+                    </span> <br>
+                    <b>2. box-shadow</b> 
+                    <p class="LH">
+                        We apply the shadow we give to the box using the box-shadow property
+                        It needs several values: <br> 1. The length of the shadow on the x-axis <br>2. The length of the shadow on the y-axis <br>3. The value of the shadow clarity <br>4. The color of the shadow
+                    </p>
+                    <span>
+                        «<b>div</b> class="test"» /*Create a box*/<br> 
+                                «<b>span</b>» <br> 
+                                This is a paragraph! <br>
+                            «<b>/span</b>»<br>
+                            «<b>/div</b>»<br>
+                    </span>
+                    <br><h5>in the CSS page:</h5>
+                    <span class="CB">
+                        .test { <br><br>
+                            text-align: center;<br>
+                            weight : 300px ;<br>
+                            height: 70px;<br>
+                            border: 2px solid black;<br>
+                            box-sizing: border-box;<br>
+                            box-shadow : 10px 5px 5px red ;<br><br>
+                        } <br>
+                    </span>
+                    <h5>Output</h5>
+                    <div id="bsh">
+                    <span >
+                        This is a paragraph!
+                    </span>
+                    </div>                       
+                </p>
+
+
+                <li>Padding</li>
+                <p>
+                    The distance between the walls of the box and the content is called <b>padding</b>. <br>
+                    Padding should have four values: <br><br>
+                </p>
+
+                <p class="LH , CBl">    
+                    1. padding-top <br>
+                    2. padding-right<br>
+                    3. padding-bottom<br>
+                    4. padding-left<br><br>
+                    
+                    <i>Paddings can be set in the following ways: </i><br>
+                    <br><span class="CG">/* padding : padding-top | padding-right | padding-bottom | padding-left ; */ </span>
+                    <br>padding: 5px 10px 15px 20px; 
+                    <br>
+                    <br><span class="CG">/* padding : padding-top | padding-right & padding-left | padding-bottom ; */ </span>
+                    <br>padding: 5px 10px 20px; 
+                    <br>
+                    <br><span class="CG">/*padding : padding-top & padding-bottom | padding-right & padding-left ; */ </span>
+                    <br>padding: 5px 20px; 
+                    <br>
+                    <br><span class="CG">/*padding : padding-top & padding-bottom & padding-right & padding-left ; */ </span>
+                    <br>padding: 20px; 
+                </p>
+                
+
+                <li>Margin</li>
+                <p>
+                    The margin is not counted towards the actual size of the box, it is <ins>the space outside</ins> the box
+                    <br>The margin is the space around your box. <br>
+                </p>
+                <p class="LH , CBl">    
+                    1. margin-top <br>
+                    2. margin-right<br>
+                    3. margin-bottom<br>
+                    4. margin-left<br><br>
+                    
+                    <i><ins>margins can be set in the following ways: </ins> </i><br>
+                    <br><span class="CG">/* margin : margin-top | margin-right | margin-bottom | margin-left ; */ </span>
+                    <br>padding: 5px 10px 15px 20px; 
+                    <br>
+                    <br><span class="CG">/* margin : margin-top | margin-right & margin-left | margin-bottom ; */ </span>
+                    <br>margin: 5px 10px 20px; 
+                    <br>
+                    <br><span class="CG">/*margin : margin-top & margin-bottom | margin-right & margin-left ; */ </span>
+                    <br>margin: 5px 20px; 
+                    <br>
+                    <br><span class="CG">/*margin : margin-top & margin-bottom & margin-right & margin-left ; */ </span>
+                    <br>margin: 20px;    
+                </p>
+            </ul>
+        </section>
+    </body>
+</html>
