@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Night8</title>
+    </head>
+
+
+    <body class="box2">
+        <!-- header -->
+        <header class="box">
+
+            <span class="HSpan"><br>Css is beautiful!</span>
+
+        </header>
+
+
+        <h1>Home</h1>
+        <section class="Sec">
+            <p>
+                In this article, we want to learn how to add beauty to our site. <br>
+                We learn to work with <b class="CR">backgrounds</b>, style our <b  class="CR">lists</b> and make <b class="CR">links</b> more beautiful than before. <br>
+                <div class="Lists">
+                    <ul>
+                        <li>
+                            <a href="#">Background</a>
+                            <a href="#">Styling-lists</a>
+                            <a href="#">Links</a>
+                        </li>
+                    </ul>
+                </div>
+            </p>     
+
+
+        </section>
+
+
+        <h1>background</h1>
+        <section class="Sec">
+            <p>
+                Let's get to know this property better:
+            </p>
+            <ol>
+                <li>Background-Color</li>
+                <p>
+                    With the help of this property, we can determine the background color of anything. <br><br>
+                    <span class="CB">
+                        .box {<br><br>
+                            background-color: red; <br>
+                            height:100px; <br>
+                            padding: 10px; <br><br>
+                        } <br>
+                    </span><br>
+                    <b class="CG">Note : </b>You can set the color using <b class="CR">color names</b> , <b class="CR">hex values</b> and <b class="CR">rgb</b>.
+                </p>
+
+                <li>Background-Image</li>
+                <p>
+                    This property helps us to choose an image as background. <br>
+                    It has the following syntax:<br><br>
+                    <span class="CB">
+                        .box{ <br><br>
+                            background-image: url (<b class="CP">'MyImage.png'</b>);<br>
+                            height:150px;<br>
+                            padding: 10px; <br><br>
+                        } <br>
+                    </span><br>
+                    We put the image address in the <b class="CR">url() </b>attribute. <br>
+                    By default, a thumbnail is tiled to fill the frame. <br>
+                    If the image is larger than the frame, it will not shrink by default , We will only see the part that fits in the box. <br><br>
+
+                </p>
+
+                <li>Background-Repeat</li>
+                <p>
+                    This property can determine how to repeat or tile the background in the box. <br>
+                    It takes value in four ways: <br><br>
+                    <b>1. no-repeat: </b>does not tile the image. <br>
+                    <b>2. repeat-x: </b>repeat horizontally. <br> 
+                    <b>3. repeat-y: </b>repeat vertically. <br>
+                    <b>4. repeat :</b> repeat in both directions <b class="CG">(default value)</b>. <br><br>
+                    <span class="CB">
+                        .box { <br><br>
+                            background-image: url ('MyImage.png') ;<br>
+                            background-repeat: repeat  ;<br>
+                            height:150px ;<br>
+                            padding: 10px ;<br><br>
+                        } <br>
+                    </span><br>
+                </p>
+
+                <li>Background-Position</li>
+                <p>
+                    The <b>background-position</b> property sets the position in which the background image appears. <br>
+                    It uses a coordinate system in which the  <b class="CR">top-left corner</b> of the box is at position <b class="CG">(0,0)</b>. <br>
+                    <br>
+                    <b class="CG">Note </b>: This property can take either <b class="CR">pixel / percent</b> values or keywords <b class="CR">(top, bottom, left, right, and center).</b> <br>
+                    <br>
+                    <span class="CB">
+                        .box { <br><br>
+                            background-image: url <b class="CP">('MyImage.png')</b> ;<br>
+                            background-repeat: no repeat ;<br>
+                            background-position: center center ;<br>
+                            height: 200px ;<br>
+                            padding: 115px ;<br>
+                            border: 2px solid red ;<br><br>
+                            } <br>
+                    </span><br>
+                    <b class="CG">Note :</b>The default background-position value is <b class="CG">(0,0)</b>: the top left corner.
+                </p>
+
+                <li>Background-Size </li>
+                <p>
+                    The <b>background-size</b> property allows we to define how the image should fit inside the box. <br>
+                    It takes value in four ways: <br><br>
+                    <b class="CR">1.Cover :</b> The image will completely cover the box, while maintaining its aspect ratio. <br><br>
+                    <b class="CR">2.contain : </b>The image will fit inside the box completely. <br><br>
+                    For example: <br><br>
+                    <span class="CB">                        
+                        .box { <br><br>
+                        background-image: url <b class="CP">('MyImage.png')</b>;<br>
+                        background-repeat: no repeat;<br>
+                        background-size: contain;<br>
+                        height: 200px;<br>
+                        padding: 15px;<br>
+                        border: 2px solid red;<br><br>
+                        } <br>
+                    </span><br>
+                </p>
+            </ol>            
+        </section>
+
+        <h1>Styling Lists</h1>
+        <section class="Sec">
+            <p>
+                By default, unordered list items are marked with round bullets, while ordered lists are numbered. <br><br>
+                Let's get to know this property better: 
+            </p>
+            <ol>
+                <li>list-style-type </li>
+                <p>
+                    <b>It's time to change the marker!</b> <br> With the help of this property, we can <b>remove markers</b> from the list or <b>change them.</b> <br>
+                    For example: <br>
+                    <span class="CB"><br>
+                        ul {<br><br>
+                            list-style-type: dicc;<br>
+                        } <br>
+                    </span> <br>
+                    <h5>Output :</h5><br>
+                    <ul id="LST">
+                        <li>Telegram</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>Linkedin</li>
+                        <li>GitHub</li>
+                    </ul>
+                    <br><br>
+                    <b class="CG">Note :</b>The <b>list-style-type</b> property allows you to change the markers to <b class="CG">circle , square , decimal , disc , lower-alpha , lower-roman , etc .</b> <br>
+                </p>
+
+                <li>list-style-position </li>
+                <p>
+                    This property determines whether the position of the markers is outside or inside. <br>
+                    Pay attention to the examples: <br><br>
+                    <span class="CB">
+                        ul{<br><br>
+                             list-style-position: inside; <br>
+                        } <br>
+                    </span>
+                    <h6>Output:</h6> <br>
+                    <div class="box4">
+                        <ul id="lsp1">
+                            <li>Apollo 11: First Human Landing</li>
+                            <li>City in Space: The International Space Station</li>
+                            <li>Great Observatory: The Hubble Space Telescope</li>
+                            <li>Everlasting Mars Rovers</li>
+                        </ul>
+                    </div>
+                    <b class="CG">Note :</b>As you can see, the bullets are <ins>inside</ins> the text. <br>To better understand this, compare this example above with the next example. <br><br>
+                    <span class="CB">
+                        ul{<br><br>
+                             list-style-position: outside; <br>
+                        } <br>
+                    </span>
+                    <h6>Output:</h6> <br>
+                    <div class="box4">
+                        <ul id="lsp2">
+                            <li>Apollo 11: First Human Landing</li>
+                            <li>City in Space: The International Space Station</li>
+                            <li>Great Observatory: The Hubble Space Telescope</li>
+                            <li>Everlasting Mars Rovers</li>
+                        </ul>
+                    </div>
+                    <b class="CG">Note :</b>The default value is <b class="CG">outside</b>. <br> <br>                    
+                </p>
+
+                <li>list-style-image </li>
+                    <p>
+                        Sometimes we say that we wish we used an image instead of markers in our list. <br>
+                        The <b><ins>list-style-image</ins></b> property is here to help us ! <br><br>
+                        <span class="CB">
+                            ul { <br><br>
+                            list-style-image: url ("bullet.jpg") ;  <br>
+                            } <br>
+                        </span><br>
+                        <b class="CG">Note :</b>This property <ins class="CR">does not allow</ins> us to control the size of the image, so: <br>
+                        <b class="CR">1. </b>it's better to set the list-style-type to <ins><b>none</b></ins> <br>
+                        <b class="CR">2. </b>and <ins>add a background image</ins> to the list items with the <ins>marker image</ins>,<br>
+                        <b class="CR">3. </b>positioning it to the left. <br><br>
+                    </p>
+
+                <li>list-style (One time for ever)</li>
+                <p>
+                    The <b class="CR">list-style</b> property is a shorthand for setting <b><ins class="CG">list-style-type</ins></b> , <b><ins class="CG">list-style-image</ins></b> and <b><ins class="CG">list-style-position</ins></b> , all in one declaration. <br>
+                    <br>
+                    <span class="CB">
+                        <b>
+                        ul { <br> <br>
+                            list-style: square outside none; <br>
+                        } <br><br>                            
+                        </b>
+                    </span>                    
+                    This would be the same as: <br><br>
+                    <span class="CB">
+                        <b>
+                        ul {<br> <br>
+                        list-style type: square;<br>
+                        list-style position: outside;<br>
+                        list-style image: none;<br>
+                        } <br>
+                        </b>
+                    </span>
+                </p>
+            </ol>
+        </section>
+
+
+        <h1>Links</h1>
+        <section class="Sec">
+            <p>
+                A link is by default blue in color and underlined. <br>
+                We can style links with CSS properties (color , font-family , background , etc). <br><br>
+                For example: <br><br>
+                <span class="CB">
+                    a { <br><br>
+                        font-size : 28px ;<br>
+                    } <br>                    
+                </span><br>
+                In addition, links can be styled differently, depending on what state they are in. <br>
+                The following selectors are available : <br> <br>
+                <b class="CR">a:link</b> --» defines the style for normal unvisited links. <br>
+                <b class="CR">a:visited</b> --» defines the style for visited links. <br>
+                <b class="CR">a:active</b> --» a link becomes active once you click on it. <br>
+                <b class="CR">a:hover</b> --» a link is hovered when the mouse is over it. <br> <br>
+                <b class="CG">Note :</b>These are called <ins>pseudo selectors</ins>. <br><br>
+            </p>
+        </section>
+
+
+        <footer class="box3"> 
+            <h4 >Ways of communication</h4>
+            <ul id="disin">
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Telegram</a></li>
+            </ul>
+        </footer>
+
+    </body>
+</html>

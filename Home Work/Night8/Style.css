@@ -1,0 +1,191 @@
+body{
+
+    padding: 0;
+    margin: 0; 
+    background-color: black;
+    box-sizing: border-box;
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-family:'Courier New', Courier, monospace;
+    line-height: 1.4;
+}
+
+
+header , footer{
+
+    text-align: center;
+}
+
+
+h1{
+
+    text-transform: capitalize;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    border: 3px solid red;
+    box-shadow: -11px 11px 15px red ;
+    font-size: 29px;
+    color: red;
+    margin: 60px 3% 20px;
+}
+
+
+a{
+
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    border: 1px solid #fff;
+    border-radius: 20%;
+    padding: 2px;
+    margin: 2px;
+}
+
+
+li{
+
+    font-size: 17px;
+    font-weight: 700;
+    color: red;
+}
+
+
+footer h4{
+    font-weight: 800;
+}
+
+
+.HSpan{
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    font-weight: 600;   
+    margin-top: 500px;
+    padding: 5px;
+    color:aliceblue;
+    text-shadow: 2px -5px 5px #fff;
+    
+}
+
+
+.Sec{
+
+    border: 3px solid red;
+    padding: 10px;
+    margin: 20px 3%;
+    margin-top: 10px;
+    box-shadow: -11px 11px 15px red ;
+}
+
+
+.box{
+    
+    width: 100%;
+    height: 120px;
+    background:url('City.jpg') no-repeat;
+    background-size:cover;
+    background-position: center;
+    border-bottom: 2px solid rgb(255, 0, 0);
+}
+
+
+.box2{
+
+    border: 5px solid #fa0808;
+    width: 100%;
+    height:100%;
+    
+}
+
+
+.box3{
+    
+    width: 100%;
+    height: 120px;
+    background:url('City.jpg') no-repeat;
+    background-size:cover;
+    background-position: center;
+    border-top: 2px solid rgb(255, 0, 0);
+}
+
+
+.Lists li{
+
+    font-weight: bold;
+    color: aquamarine;
+    list-style-type:none;
+}
+
+
+.CP{
+    color:pink;
+}
+
+
+.CR{
+    color: #fa0808;
+}
+
+
+.CG{
+    color:greenyellow;
+}
+
+
+.CB{
+    color:lightskyblue;
+}
+
+
+a:hover{
+
+    font-size:17px ;
+    font-family:Arial, Helvetica, sans-serif;
+    text-shadow: 5px 5px 5px #fff;
+    font-weight: bold;
+    color: aqua;
+    letter-spacing: 2px;
+    border: 1px solid #000;
+    padding: 2px; 
+}
+
+.box4{
+
+    /* border: 0.5px solid #fff; */
+    height: 150px;
+    width: 300px;
+}
+
+#LST li{
+    color: orangered;
+    font-size: 15px;
+    list-style-type: disc;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#lsp1 li{
+
+    color: orangered;
+    font-size: 15px;
+    list-style-type: disc;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-position: inside;
+}
+
+#lsp2 li{
+
+    color: orangered;
+    font-size: 15px;
+    list-style-type: disc;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-position:outside;
+}
+
+#disin li{
+
+    display: inline;
+}
+
