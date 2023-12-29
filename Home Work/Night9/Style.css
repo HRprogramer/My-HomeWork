@@ -1,0 +1,483 @@
+body{
+
+    margin: 0;
+    padding: 0;
+    background-color: #161A30;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #FFECD6;
+    box-sizing: border-box;
+}
+
+.cr{
+
+    color: pink;
+}
+
+.cg{
+
+    color: lawngreen;
+}
+
+.cb{
+
+    color: aquamarine;
+}
+
+
+/* ******************  HEADER  ****************** */
+
+
+header{
+
+    margin-top: 0;
+    background: url('Image\ \(1\).jpg') no-repeat;
+    min-height: 100vh; 
+    width: 100%;
+    background-size:cover;
+    background-position:bottom;
+    border: 2px solid #11235A;
+}
+
+header p{
+
+    letter-spacing: 1px;
+    font-family: serif;
+    margin: 20vh 40vw ;
+    margin-right: 50vw;
+    margin-left: 5vw;
+    font-size: 55px;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+}
+
+.header h3{
+    left: 0;
+    top: 0;
+    padding-top: 15px;
+    margin-left: 3%;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 23px;
+    height: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.header ul{
+    width: 35%;
+    height: 40px; 
+    right: 0;
+    top: 0; 
+    padding-top: 15px;
+}
+
+.header ul li{
+
+    text-transform: capitalize;
+    font-family: serif;
+    margin-right: 10%;
+    font-size: 21px;
+    display: inline;
+    text-align: center;
+}
+
+.header ul li a {
+    color: #FFECD6;
+    letter-spacing: 2px;
+    text-decoration: none;
+    padding: 1px;
+}
+
+a:hover{
+
+    font-weight: 700;
+    color: aqua;
+    font-size: 25px;
+    border-bottom:2px solid #f6aa54 ;
+}
+
+
+
+/* ******************  HOME  ****************** */
+
+
+#home{
+
+    min-height: 80vh;
+
+}
+
+.div-home{
+    /* border: 1px solid #fff; */
+    border-radius: 25px;
+    background-color: #31304D;
+    margin: 5vh 5vw 3vh;
+    width: 90vw;
+    /* height: 65vh; */
+    box-shadow: 0 0 10px #E36414;
+    box-shadow: 0 0 20px #FFECD6;
+    justify-content: space-between;
+}
+
+.div-home h2{
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 35px;
+    padding: 20px 0 0;
+    /* height: 10vh; */
+    /* border: 1px solid red; */
+    margin-top: 0;
+    text-align: center;
+    color: #f6aa54;
+    
+}
+
+
+.div-home p{
+    margin: 5vh 2vw ;
+    /* height: 40vh; */
+    padding: 1vh 5vw 5vh;
+    color: #FFB534;
+    font-size: 25px;
+    font-family: serif;
+    letter-spacing: 1.2px;
+    line-height: 1.8;
+
+}
+
+.Co{
+
+    color: #E36414;
+    font-weight: bold;
+}
+
+
+
+/* ******************  TABLES  ****************** */
+
+
+#Table{
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:start;
+
+}
+
+.div-table{
+    /* border: 1px solid #fff; */
+    border-radius: 25px;
+    background-color: #31304D;
+    margin: 2vh 5vw 2vh;
+    width: 90vw;
+    /* height: 65vh; */
+    box-shadow: 0 0 10px #E36414;
+    box-shadow: 0 0 20px #FFECD6;
+    justify-content: space-between;
+}
+
+.div-table h1{
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 35px;
+    padding: 20px 0 0;
+    /* height: 10vh; */
+    /* border: 1px solid red; */
+    margin-top: 0;
+    text-align: center;
+    color: #f6aa54;
+    
+}
+
+.text-table{
+
+    display: flex;
+    flex-direction: row;
+}
+
+.text-table p{
+
+    flex: 2;
+    margin: 5vh 2vw ;
+    /* height: 40vh; */
+    padding: 1vh 5vw;
+    color: #FFB534;
+    font-size: 20px;
+    font-family: serif;
+    letter-spacing: 1.2px;
+    line-height: 1.5;
+    /* border: 1px solid#fff; */
+}
+
+.div-table p{
+
+
+    margin: 5vh 2vw ;
+    padding: 1vh 5vw;
+    color: #FFB534;
+    font-size: 20px;
+    font-family: serif;
+    letter-spacing: 1.2px;
+    line-height: 1.5;
+}
+
+#box{
+    /* position:inherit; */
+    border-radius:20px ;
+    flex: 1;
+    margin: 20px;
+    background-color: #f6aa54;
+    color: green;
+    font-size: 17px;
+}
+
+.test1{
+    margin-left:8% ;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+.test1 th , .test1 td{
+
+    border:1.5px solid white;
+    text-align: center;
+}
+
+
+/* ******************  Forms  ****************** */
+
+
+#Forms{
+
+    min-height: 100vh;
+}
+
+.div-form{
+    /* border: 1px solid #fff; */
+    border-radius: 25px;
+    background-color: #31304D;
+    margin: 2vh 5vw 2vh;
+    width: 90vw;
+    /* height: 65vh; */
+    box-shadow: 0 0 10px #E36414;
+    box-shadow: 0 0 20px #FFECD6;
+    justify-content: space-between;
+}
+
+.div-form h1{
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 35px;
+    padding: 20px 0 0;
+    margin-top: 0;
+    text-align: center;
+    color: #f6aa54;
+    
+}
+
+.div-form p{
+
+
+    margin: 5vh 2vw ;
+    padding: 1vh 5vw;
+    color: #FFB534;
+    font-size: 20px;
+    font-family: serif;
+    letter-spacing: 1.2px;
+    line-height: 1.5;
+}
+
+.text-form{
+    /* border: 1px solid #fff; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.test3{
+    
+    display: block;
+    align-items: center;
+}
+
+.test4{
+  
+    display: block;
+    align-items: center;    
+}
+
+#box2{
+    background-color: #FFB534;
+    border-radius: 20px;
+}
+
+#box3{
+    background-color: #FFB534;
+    border-radius: 20px;
+}
+
+.test-form{
+    margin-top: 2vh;
+    margin-left: 3vw;
+    padding: 2% 0 2% 6%;
+}
+
+.test-form input {
+
+    border: 1px solid green;
+    width: 80%;
+    padding: 5px;
+}
+
+.test-form label {
+
+    font-weight: bold;
+    color: green;
+}
+
+.test-form input[type='text'] {
+
+    border: 1px solid green;
+    width: 80%;
+    padding: 5px;
+}
+
+.test-form input[type='text'], .test-form input[type='email'] {
+
+    border:1px solid green;
+    width:80%;
+    padding: 5px;
+    color: green;
+    font-weight: bold;
+}
+
+.test-form input[type='button'] {
+
+    background-color: green;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.test-form input[type='button']:hover {
+
+    background-color: gray;
+}
+
+
+/* ******************  CONTACT  ****************** */
+
+
+.contact{
+
+    font-size: 27px;
+    text-align: center;
+    color: #f6aa54;
+}
+
+.contact i{
+
+    font-size: 30px;
+    font-weight: bold;
+    color: green;
+}
+
+.form{
+
+    height: 40vh;
+    margin:  10vh 33vw;
+    text-align: center;
+}
+
+.form label{
+
+    padding:0;
+    margin: 0;
+    display: block;
+    text-align: center;
+
+}
+
+.form textarea{
+
+    border-radius: 30px;
+    background-color: #f6aa54;
+    width: 25vw;
+    height: 10vh;
+    margin: 5px;
+    padding: 5px;
+    border: none;
+}
+
+form label input[name='email'],
+form label input[name='name']{
+
+    border-radius: 30px;
+    width: 17vw;
+    height: 15px;
+    margin: 5px;
+    padding: 5px;
+    background-color: #f6aa54;
+    border: none;
+
+}
+
+.form input[type='submit']{
+
+    border-radius: 30px;
+    background-color: green;
+    color:#f6aa54;
+    width: 10vw;
+    height:30px ;
+    margin: 5px;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+
+}
+
+.form input[name='email']::placeholder,
+.form input[name='name']::placeholder,  
+.form textarea::placeholder{
+
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: green;
+    font-size: 17px;
+    text-align: center;
+}
+
+.form input[type='submit']:hover{
+
+    font-family: serif;
+    color: darkgreen;
+    background-color: #f6aa54;
+    font-weight: bold;
+    font-size: 17px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+form label input:hover , 
+form label textarea:hover{
+
+    cursor: pointer;
+    box-shadow: 0 0 10px #f6aa54;
+    border: 1px solid green;
+
+}

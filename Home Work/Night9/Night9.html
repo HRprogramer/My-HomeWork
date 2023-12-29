@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Night9</title>
+    </head>
+
+
+    <body>
+
+
+        <!-- Header -->
+        <header>
+            <div class="header">
+                <h3> Html & CSS</h3>
+
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#Table">table</a></li>
+                    <li><a href="#Forms">forms</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+
+            <p>
+                
+                Everyone has weaknasses <br>but <br>I'm not everyone !!
+            </p>
+        </header>
+
+
+        <!-- Home -->
+        <section id="home">
+            <div class="div-home">
+            <h2>Home</h2>
+            <p>
+                I am glad that you are here. <br>
+                I have prepared an article for you about <span class="Co">(styling tables and forms in css)</span> . <br>
+                We will first talk about the codes and the methods of implementing these codes for the design of the tables, then we will go to the topics of the forms. <br>
+                This part is very sweet and charming and I know you will enjoy it. <br>
+                Thank you for giving us your time. <br>
+            </p>
+            </div>
+        </section>
+
+
+        <!-- Table -->
+        <section id="Table">
+            <div  class="div-table">
+                <h1>Table</h1>
+                <div class="text-table">
+                    <p>
+                        Let's go with an example: <br><br>
+                        <span class="cb">
+                            table {<br>
+                            border-collapse: collapse;<br>
+                            width: 100%;<br>
+                            } <br><br>
+                            td,th {<br>
+                            border:1px solid black;<br>
+                            text-align: center;<br>
+                            } <br>
+                        </span>
+                        <br>
+                        output :
+                    </p>
+                
+                    <form action="">
+                        <label for="text">
+                            <textarea name="table-box" id="box" cols="30" rows="21">
+
+        <table>
+
+            <tr>
+                <th>Mathematics</th>
+                <th>physics</th>
+                <th>chemistry</th>
+            </tr>
+        
+        
+            <tr>
+                <td>20</td>
+                <td>15</td>
+                <td>18</td>
+            </tr>
+        
+        </table>
+
+                            </textarea>
+                        </label>
+                    </form>
+                </div>
+
+                <table class="test1">
+
+                    <tr>
+                        <th>Mathematics</th>
+                        <th>physics</th>
+                        <th>chemistry</th>
+                    </tr>
+                
+                
+                    <tr>
+                        <td>20</td>
+                        <td>15</td>
+                        <td>18</td>
+                    </tr>
+                
+                </table>
+                <br>
+                <p>
+                    <b class="cg">Note :</b>By default, there is a space between table cells that creates a double border. <br>
+                    using the border-collapse property , we can remove this space. <br><br>
+                    Let's give space to the contents of the first table for convenience. <br> <br>
+                    <span class="cb">
+                        td,th {<br>
+                        border:1px solid white;<br>
+                        padding : 10px; <br>
+                        text-align: center;<br>
+                        } <br><br>
+                    </span>
+                    We have also <b class="cr">aligned</b> the text in all cells to the <b class="cr">center</b>. <br>
+                    Now , it's time to create a background! <br><br>
+                    <span class="cb">
+                        th { <br><br>
+                            background-color: gray; <br>
+                        } <br><br>
+                    </span>
+                    <b class="cg">Note :</b>CSS provides the <b class="cr">nth-child()</b> pseudo selector, which allows you to select specific rows and style them. <br><br>
+                    For example, we can style the 3rd row like this: <br><br>
+                    <span class="cb">
+                        tr:nth-child(3){ <br><br>
+                        background-color: #b0d1e4; <br>
+                        } <br><br>
+                    </span>
+                    The rows are counted from the top to the bottom, including the heading rows. <br>
+                    The <b class="cr">nth-child selector</b> allows you to also define rules for the rows, instead of providing the number. <br><br>
+                    <span class="cb">
+                        tr:nth-child (even){<br><br>
+                        background-color: #b0d1e4;<br>
+                        } <br><br>
+                        tr:nth-child (odd){<br><br>
+                        background-color: #6aabd1; <br>
+                        } <br><br>                
+                    </span>
+                    <b class="cg">Note :</b>This will automatically apply the assigned styles to the odd and even rows. <br><br>
+                </p>
+            </div>
+        </section>
+
+
+        <!-- Forms -->
+        <section id="Forms">
+            <div class="div-form">
+                <h1>Forms</h1>
+                <p>
+                    Let's take a sample form and add some style to it.
+                     
+                </p>
+                <div class="text-form">
+                    <div class="test3">
+                        <span>HTML</span><br>
+                        <textarea name="form-box" id="box2" cols="65" rows="16">
+    
+    
+<form>
+
+    <label for="name">Name: </label>
+    <input type="text" id="name" placeholder="John Smith">
+    <br><br>
+    <label for="email">Email: </label>
+    <input type="email" id="email" placeholder="name@domain.com">
+    <br><br>
+    <input type="button" value="Send">
+
+</form>
+    
+                        </textarea> 
+                    </div>
+
+
+                    <div class="test4">
+                        <span>CSS</span>
+                        <br>
+                        <textarea name="form-box" id="box3" cols="65" rows="16">
+
+                input {
+
+                    border: 1px solid green;
+                    width: 80%;
+                    padding: 5px;
+                }
+
+                label {
+
+                    font-weight: bold;
+                    color: green;
+                }
+
+                input[type='text'] {
+
+                    border: 1px solid green;
+                    width: 80%;
+                    padding: 5px;
+                }
+
+                input[type='text'], input[type='email'] {
+
+                    border:1px solid green;
+                    width:80%;
+                    padding: 5px;
+                    color: green;
+                    font-weight: bold;
+                }
+
+                input[type='button'] {
+
+                    background-color: green;
+                    border: none;
+                    border-radius: 20px;
+                    padding: 10px 20px;
+                    font-weight: bold;
+                    color: white;
+                }
+
+                        </textarea>
+                    </div>
+                </div> 
+                <p>Output :</p> 
+                <div class="test-form">
+                    <form>
+
+                        <label for="name">Name: </label><br>
+                        <input type="text" id="name" placeholder="John Smith">
+                        <br><br>
+                        <label for="email">Email: </label><br>
+                        <input type="email" id="email" placeholder="name@domain.com">
+                        <br><br>
+                        <input type="button" value="Send">
+                    
+                    </form>
+                </div>  
+            </div>
+        </section>
+
+        
+        <!-- contact -->
+        <main id="contact">
+            <h4 class="contact">contact <i>me!</i> </h4>
+            <div class="form">
+                <form action="" method="">
+
+                    <label for="name">
+                        <input type="text" name="name" placeholder="User name :">
+                    </label>
+
+                    <label for="email">
+                        <input type="email" name="email" placeholder="Enter your email :">
+                    </label>
+
+                    <label for="message">
+                        <textarea type="message" name="message" placeholder="What do you want to say my friend?"></textarea>
+                    </label>
+                  
+                    <label for="submit">
+                        <input type="submit" name="submit" value="Send" placeholder="submit">
+                    </label>
+
+                </form>
+            </div>
+        </main>
+
+    </body>
+</html>
