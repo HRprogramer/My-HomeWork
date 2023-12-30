@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Night 10</title>
+    </head>
+
+
+    <body>
+
+        <!-- HEADER -->
+        <header>
+            <div class="div-head">
+                <div class="div-ph1">
+                    <h1><span>CSS </span>Layout & Positioning</h1>
+                    <p>It's time to put everything in place</p>
+                </div>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#Layout">Layout</a></li>
+                        <li><a href="#Positioning">Positioning</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- HOME -->
+        <section id="Home">
+            <div class="div-home">
+                <h1>HOME</h1>
+                <p>
+                    To start the work, first we will get acquainted with the concepts of block, display and flex and we will learn each one with an example and we will understand how to put the boxes and contents of our site in their place. <br>
+                    In the following, we will learn about property position and use its applications. <br>
+                </p>
+            </div>
+        </section>
+
+        <!-- Layout -->
+        <section id="Layout">
+            <div class="div-layout">
+                <h1>Layout</h1>
+                <ol>
+                    <li>Display:(Block & Inline)</li>
+                    <p>
+                        As we now know, there are <b>block</b> and <b>inline</b> elements. <br>
+                        The block elements span the entire width of their parent and start from a new line. <br>
+                        while the inline elements are placed inside block elements and act similar to their content, sitting on the same line. <br><br>
+                        For example : <br><br>
+                        <span class="cb">
+                            «p»Learning «b»>CSS«/b» is fun!«/p» <br>
+                            «p»some text «/p» <br>
+                            «p»another «b»>text«/b»«/p» <br> <br>
+                        </span>
+                        <b class="cg">Hint :</b>I used ( « » ) signs instead of ( < > ) signs! <br>
+                        <b class="cg">Note :</b> «p» is a <b>block</b> element, while «b» is <b>inline</b>. <br>
+    
+                        Now the CSS codes: <br><br>
+                        <span class="cb">
+                            <b>p</b> {<br>
+                                background-color: blue;<br>
+                                border: 1px solid blue;<br>
+                                padding: 5px;<br>
+                                } <br><br>
+                            <b>b</b> {<br>
+                                background-color: yellow;<br>
+                                border: 1px dashed black;<br>
+                                } <br><br>
+                        </span>
+    
+                        Output : <br><br>
+                        <div class="div-test">
+                            <p>Learning <b>CSS</b> is fun!</p>
+                            <p>some text </p>
+                            <p>another <b>text</b></p>
+                        </div><br>
+                    </p>
+    
+                    <p>
+                        With the help of the <b>display</b> property, we can change elements from <b>inline</b> to <b>block</b> or <b>vice versa</b>. <br><br>
+    
+                        <span class="cb">
+                            b {<br>
+                                background-color: yellow;<br>
+                                border: 1px dashed black;<br>
+                                display: block;<br>
+                                } <br>
+                        </span><br>
+    
+                        Output : <br><br>
+    
+                        <div class="div-test2">
+                            <p>Learning <b>CSS</b> is fun!</p>
+                            <p>some text </p>
+                            <p>another <b>text</b></p>
+                        </div><br><br>
+                    </p>   
+                    <p> 
+                        <b class="cg">Note :</b>In a previous example we used the <b>display</b> property to change the list items behavior and make them <b>inline</b>. <br><br>
+                    </p>
+
+                    <li>Display:(Flex)</li>
+                    <p>
+                        Another value of display is flex. <br>
+                        It is used to arrange elements in rows and columns. <br>
+                        Consider the following examples: <br><br>
+
+                        <div class="all-box">
+                            <div class="frist">
+                                <label for="demo1"><b class="cb">HTML codes : </b><br></label>
+                                <textarea name="demo1" id="box1" cols="50" rows="10">
+
+<section>
+
+    <article> First section </article>
+    <article id="special"> Second section </article>
+    <article> Third section </article>
+
+</section>
+
+                                </textarea>
+                            </div>
+
+                            <div class="second">
+                                <label for="demo2"><b class="cb">CSS codes : </b></label><br>
+                                <textarea name="demo2" id="box2" cols="50" rows="10">
+    section {
+        
+        display: flex;
+    }
+
+    article {
+
+        background-color: blue;
+        color: white;
+        padding: 20px;
+        margin: 10px;
+        flex: 1;
+    }
+
+    #special {
+
+        flex: 2;
+    }
+                                </textarea>
+                            </div>
+                        </div><br>
+                    </p> 
+                    <p>
+                        Output : <br> <br>
+                                                                         
+                        <section class="sec">
+                            <article> First section </article>
+                            <article id="special"> Second section </article>
+                            <article> Third section </article>
+                        </section>
+                           
+                        <p>
+                            <b>1. </b>We give some style and color to the elements with the help of CSS so that they can be distinguished from each other. <br>
+                            <b>2. </b>If we add <b>display:flex </b>; to the section, it will make the <ins>articles</ins> inside it act as flex items and arrange in columns. <br>
+                            <b class="cg">Note :</b>The flex items take equal widths, to <ins>fill</ins> up the width of their container. <br>
+                            <b>3. </b> The flex items take equal widths, to fill up the width of their container. <br>
+                            By default, the flex items take equal space. <br>
+                            <b>We can control what proportion of space flex items take up compared to the other items using the flex property. </b><br>
+                            <b>4. </b>In the example above, we gave the first article a flex value of 2, while the other two articles will have a flex value of 1.
+
+                        </p>
+                    </p>
+                </ol>
+
+            </div> 
+        </section>
+
+
+        <!-- Positioning -->
+        <section id="Positioning">
+            <main class="Positioning">
+                <h1>Positioning</h1>
+                <p>
+                    I want to introduce you to the concepts. So let's go!
+                </p>
+                <ol>
+                    <li>float</li>
+                    <p>
+                        The float property allows you to float an element inside a container. <br>
+                        For example, we can float an image in a text, to make the text wrap on one side of it : <br><br>
+                        <span class="cb">
+                            img { <br><br>
+                            float: right;<br>
+                            } <br><br>
+                        </span>
+                        The supported values are left and right. <br>
+                        We can float any other element with the same technique. <br><br>
+                    </p>
+                    <li>position</li>
+                    <p>
+                        We use the position property to set the exact position of anything. <br> 
+                        There are a number of different values the position property supports, changing the way the element is positioned. <br><br>
+                    </p>
+                    <ul>
+                        <li>static</li>
+                        <p>
+                            HTML elements are positioned static by default. <br>
+                            <b class="cg">Note : </b>Static positioned elements are not affected by the <b>top</b> , <b>bottom</b> , <b>left</b> , and <b>right</b> properties. <br>
+                            An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page. <br>
+                        </p>
+
+                        <li>relative</li>
+                        <p>
+                            An element with <b>position: relative;</b> is positioned <b>relative</b> to its normal position. <br>
+                            Setting the <ins>top, right, bottom, and left</ins> properties of a relatively-positioned element will cause it to be adjusted away from its normal position. <br>
+                            <b class="cg">Note :</b> Other content will not be adjusted to fit into any gap left by the element. <br>
+                        </p>
+
+                        <li>fixed</li>
+                        <p>
+                            An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element. <br>
+                            A fixed element does not leave a gap in the page where it would normally have been located. <br>
+                            Notice the fixed element in the lower-right corner of the page. Here is the CSS that is used: <br><br>
+                            <span class="cb">
+                                .test {<br><br>
+
+                                    position: fixed; <br>
+                                    bottom: 0;<br>
+                                    right: 0;<br>
+                                    width: 300px;<br>
+                                    border: 3px solid #73AD21;<br>
+                                }
+                            </span>
+                        </p>
+                        <li>absolute</li>
+                        <p>
+                            An element with <b>position: absolute; </b>is positioned relative to the nearest positioned ancestor <b>(instead of positioned relative to the viewport, like fixed).</b> <br>
+                            However; if an <b>absolute positioned</b> element has no positioned ancestors, it uses the document body, and moves along with page scrolling. <br>
+                            <b class="cg">Note: </b>Absolute positioned elements are removed from the normal flow, and can overlap elements. <br>
+                        </p>
+                        <li>sticky</li>
+                        <p>
+                            An element with position: sticky; is positioned based on the user's scroll position. <br>
+                            A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). <br>
+                            <b class="cg">Note :</b> Note: Internet Explorer does not support sticky positioning. Safari requires a -webkit- prefix (see example). You must also specify at least one of top, right, bottom or left for sticky positioning to work. <br><br>
+                            <span class="cb">
+                                <b>div.sticky </b>{ <br><br>
+                                    position: -webkit-sticky; /* Safari */ <br>
+                                    position: sticky;<br>
+                                    <b>top: 0;</b><br>
+                                    background-color: green;<br>
+                                    border: 2px solid #4CAF50;<br>
+                                }<br><br>
+                            </span>
+                            In this example, the sticky element sticks to the top of the page <b>(top: 0)</b>, when you reach its scroll position. <br>
+                        </p>
+                    </ul>
+                    <li>z-index</li>
+                    <p>
+                        The z-index property specifies the stack order of an element. <br>
+                        An element with greater stack order is always in front of an element with a lower stack order. <br>
+                        <b class="cg">Note: </b>z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct children of display:flex elements). <br>
+                        <b class="cg">Note: </b>If two positioned elements overlap without a z-index specified, the element positioned last in the HTML code will be shown on top. <br>
+                    </p>
+                </ol>
+            </main>
+        </section> 
+    </body>
+</html>

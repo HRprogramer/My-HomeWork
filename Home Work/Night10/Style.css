@@ -1,0 +1,329 @@
+
+
+body{
+
+    margin: 0;
+    color: #BF3131;
+    font-family: serif;
+    background-color: #BF3131;
+    box-sizing: border-box;
+
+}
+
+.cb{
+    color: #7E30E1;
+}
+
+.cg{
+
+    color: green;
+}
+
+textarea{
+
+    resize: none;
+}
+
+
+
+/* ******************** HEADER ******************** */
+
+
+header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    color: #EAD196;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: #7D0A0A;
+    
+
+}
+
+.div-head{
+ 
+    width: 90%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-ph1{
+
+    display: block;
+    padding-left: 0%;
+}
+
+.div-ph1 h1{
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.div-ph1 span{
+
+    font-weight: 800;
+
+}
+
+.div-ph1 p{
+
+    margin-top: 0;
+    font-size: 20px;
+
+}
+
+.navigation li{
+
+    display: inline;
+}
+
+.navigation a{
+
+    margin-right:15px ;
+    font-size: 18px;
+    color: #EAD196;
+    text-decoration: none;
+}
+
+.navigation a:hover{
+
+    color: #4CB9E7;
+    font-weight: 700;
+
+}
+
+
+
+/* ******************** HOME ******************** */
+
+
+#Home{
+
+    border:none;
+    min-height: 80vh;
+    width: 95%;
+    margin: 20px 2.5%;
+    border-radius: 50px 10px;
+    box-shadow: 0 0 10px #BF3131;
+    background-color: #EAD196;
+
+}
+
+.div-home h1{
+
+    text-align: center;
+    color: #BF3131;
+    font-size: 35px;
+    letter-spacing: 1px;
+    padding: 30px ;
+}
+
+.div-home p{
+    
+    line-height: 1.5;
+    padding: 0 7%;
+    font-size:25px;
+
+}
+
+
+
+/* ******************** Layout ******************** */
+
+
+
+#Layout{
+
+    border:none;
+    min-height: 100vh;
+    width: 95%;
+    margin: 20px 2.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px 10px;
+    box-shadow: 0 0 10px #BF3131;
+    background-color: #EAD196;
+
+}
+
+.div-layout{
+
+    margin: 2%;
+    width: 90%;
+}
+
+.div-layout li{
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.div-layout h1{
+
+    text-align: center;
+    color: #BF3131;
+    font-size: 30px;
+    letter-spacing: 1px;
+    padding: 30px ;
+    border-bottom: 2px dashed #7D0A0A;
+}
+
+.div-layout p{
+    
+    line-height: 1.5;
+    font-size:20px;
+
+}
+
+.div-test p {
+
+    color: #000;
+    background-color: red;
+    border: 1px solid blue;
+    padding: 5px;
+}
+
+.div-test b {
+
+    color: #000;
+    background-color: yellow;
+    border: 1px dashed black;
+}
+
+.div-test2 b{
+    
+    color: #000;
+    background-color: yellow;
+    border: 1px dashed black;
+    display: block;
+
+}
+
+.div-test2 p{
+
+    color: #000;
+    background-color: red;
+    border: 1px solid blue;
+    padding: 5px;
+}
+
+.all-box{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.frist label{
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.second label{
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#box1{
+
+    background-color: #F9E8D9;
+    color: #092635;
+    border-radius: 1rem;
+    font-size: 17px;
+}
+
+#box2{
+    
+    background-color: #F9E8D9;
+    color: #092635;
+    border-radius: 1rem;
+    font-size: 17px;
+}
+
+
+.sec {
+
+    display: flex;
+
+}
+
+.sec article {
+
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+
+}
+
+#special{
+
+    flex: 2;
+}
+
+
+
+/* ******************** Positioning ******************** */
+
+
+
+#Positioning{
+
+    border:none;
+    min-height: 100vh;
+    width: 95%;
+    margin: 20px 2.5%;
+    display: flex;
+    line-height: 1.5;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px 10px;
+    box-shadow: 0 0 10px #BF3131;
+    background-color: #EAD196;
+
+}
+
+.Positioning{
+
+    width: 90%;
+    margin: 2%;
+}
+
+.Positioning h1{
+
+    text-align: center;
+    color: #BF3131;
+    font-size: 30px;
+    letter-spacing: 1px;
+    padding: 30px ;
+    border-bottom: 2px dashed #7D0A0A;
+}
+
+.Positioning p{
+
+    font-size: 20px;
+
+}
+
+.Positioning li{
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
