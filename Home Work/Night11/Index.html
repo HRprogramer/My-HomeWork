@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+
+        <!-- header -->
+        <header>
+            <div class="first">
+                <h1>Latest properties</h1>
+                <p>I want to make them dance for me</p>                
+            </div>
+            <ul>
+                <li><a href="#transforms">transforms</a></li>
+                <li><a href="#transitions">transitions</a></li>
+                <li><a href="#keyframes">keyframes</a></li> 
+                <li><a href="#animations">animations</a></li>
+            </ul>
+        </header>
+
+
+        <!-- transforms -->
+        <section id="transforms">
+            <div class="transforms">
+                <h1>CSS transform Property</h1>
+                <ul>
+                    <li>Example</li>
+                    <p>Rotate, skew, and scale three different «div» elements:</p>
+                    <br><span class="cb">
+                        div.a {<br><br>
+                        transform: rotate(20deg);<br>
+                        } <br><br>
+                        
+                        div.b {<br><br>
+                        transform: skewY(20deg);<br>
+                        } <br><br>
+                        
+                        div.c {<br><br>
+                        transform: scaleY(1.5);<br>
+                        } <br><br>
+                    </span>
+                    <li>Definition and Usage</li>
+                    <p>
+                        The transform property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements.
+                    </p>
+                    <li>Syntax</li>
+                    <p>transform: none|transform-functions|initial|inherit;</p>
+                </ul>
+    
+                <h1>Property Values</h1>
+                <table>
+                    <tr>
+                        <th>Value</th>
+                        <th>Description</th>
+                    </tr>
+    
+                    <tr>
+                        <td>none</td>
+                        <td>Defines that there should be no transformation</td>
+                    </tr>
+    
+                    <tr>
+                        <td>matrix(n,n,n,n,n,n)	</td>
+                        <td>Defines a 2D transformation, using a matrix of six values</td>
+                    </tr>
+    
+                    <tr>
+                        <td>matrix3d
+                        <br>(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)</td>
+                        <td>Defines a 3D transformation, using a 4x4 matrix of 16 values	</td>
+                    </tr>
+    
+                    <tr>
+                        <td>translate(x,y)</td>
+                        <td>Defines a 2D translation</td>
+                    </tr>
+    
+                    <tr>
+                        <td>translate3d(x,y,z)</td>
+                        <td>Defines a 3D translation</td>
+                    </tr>
+    
+                    <tr>
+                        <td>translateX(x)</td>
+                        <td>Defines a translation, using only the value for the X-axis</td>
+                    </tr>
+    
+                    <tr>
+                        <td>translateY(y)</td>
+                        <td>Defines a translation, using only the value for the Y-axis	</td>
+                    </tr>
+    
+                    <tr>
+                        <td>translateZ(z)	</td>
+                        <td>Defines a 3D translation, using only the value for the Z-axis	</td>
+                    </tr>
+    
+                    <tr>
+                        <td>scale(x,y)	</td>
+                        <td>Defines a 2D scale transformation</td>
+                    </tr>
+    
+                    <tr>
+                        <td>scale3d(x,y,z)</td>
+                        <td>Defines a 3D scale transformation</td>
+                    </tr>
+    
+                    <tr>
+                        <td>scaleX(x)	</td>
+                        <td>Defines a scale transformation by giving a value for the X-axis	</td>
+                    </tr>
+    
+                    <tr>
+                        <td>scaleY(y)</td>
+                        <td>Defines a scale transformation by giving a value for the Y-axis	</td>
+                    </tr>
+    
+                    <tr>
+                        <td>scaleZ(z)	</td>
+                        <td>Defines a 3D scale transformation by giving a value for the Z-axis	</td>
+                    </tr>
+    
+                    <tr>
+                        <td>rotate(angle)	</td>
+                        <td>Defines a 2D rotation, the angle is specified in the parameter</td>
+                    </tr>
+    
+                    <tr>
+                        <td>rotate3d(x,y,z,angle)	</td>
+                        <td>Defines a 3D rotation	</td>
+                    </tr>
+    
+                    <tr>
+                        <td>rotateX(angle)	</td>
+                        <td>Defines a 3D rotation along the X-axis</td>
+                    </tr>
+    
+                    <tr>
+                        <td>rotateY(angle)	</td>
+                        <td>Defines a 3D rotation along the Y-axis</td>
+                    </tr>
+    
+                    <tr>
+                        <td>rotateZ(angle)	</td>
+                        <td>Defines a 2D skew transformation along the X-axis</td>
+                    </tr>
+    
+                    <tr>
+                        <td>skew(x-angle,y-angle)	</td>
+                        <td>Defines a 2D skew transformation along the X- and the Y-axis</td>
+                    </tr>
+    
+                    <tr>
+                        <td>skewX(angle)</td>
+                        <td>Defines a 2D skew transformation along the X-axis</td>
+                    </tr>
+    
+                    <tr>
+                        <td>skewY(angle)	</td>
+                        <td>Defines a 2D skew transformation along the Y-axis</td>
+                    </tr>
+    
+                    <tr>
+                        <td>perspective(n)	</td>
+                        <td>Defines a perspective view for a 3D transformed element	</td>
+                    </tr>
+    
+                    <tr>
+                        <td>initial</td>
+                        <td>Sets this property to its default value.</td>
+                    </tr>
+    
+                    <tr>
+                        <td>inherit</td>
+                        <td>Inherits this property from its parent element.</td>
+                    </tr>
+                </table>          
+            </div>
+
+        </section>
+
+        <hr>
+        <!-- transitions -->
+        <section id="transitions">
+            <div class="transitions">
+                <h1>CSS Transitions</h1>
+                <p>
+                    CSS transitions allows you to change property values smoothly, over a given duration. <br>
+                    In this chapter you will learn about the following properties: <br><br>
+                </p>
+                <ul>
+                    <li>transition</li>
+                    <li>transition-delay</li>
+                    <li>transition-duration</li>
+                    <li>transition-property</li>
+                    <li>transition-timing-function</li>
+                </ul><br>
+                <h1>How to Use CSS Transitions?</h1>
+                <p>
+                    To create a transition effect, you must specify two things:
+                </p>
+                <ul>
+                    <li>the CSS property you want to add an effect to</li>
+                    <li>the duration of the effect</li>
+                </ul>
+                <p>
+                    <b class="cg">Note: </b>
+                    If the duration part is not specified, the transition will have no effect, because the default value is 0. <br><br>
+                    The following example shows a 100px * 100px red «div» element. The «div» element has also specified a transition effect for the width property, with a duration of 2 seconds: <br><br>
+                </p>
+                <span class="cb">
+                    div {<br><br>
+                        width: 100px;<br>
+                        height: 100px;<br>
+                        background: red;<br>
+                        transition: width 2s;<br>
+                    } <br><br>
+                </span>
+                <p>
+                    The transition effect will start when the specified CSS property (width) changes value. <br><br>
+                    Now, let us specify a new value for the width property when a user mouses over the «div» element: <br>
+                </p>
+                <span class="cb">   
+                    div:hover {<br><br>
+                        width: 300px;<br>
+                    } <br><br>
+                </span>
+                <p>
+                    <b class="cg">Note:</b>
+                    Notice that when the cursor mouses out of the element, it will gradually change back to its original style. <br>
+                </p><br>
+                <h1>Change Several Property Values</h1>
+                <p>
+                    The following example adds a transition effect for both the width and height property, with a duration of 2 seconds for the <ins>width</ins> and 4 seconds for the <ins>height</ins>: <br>
+                </p>
+                <span class="cb"><br>
+                    div { <br><br>
+                        transition: width 2s, height 4s;<br>
+                    } <br>
+                </span><br>
+                <h1>Specify the Speed Curve of the Transition</h1>
+                <p>
+                    The transition-timing-function property specifies the speed curve of the transition effect. <br><br>
+                    The transition-timing-function property can have the following values: <br>
+                </p>
+                <ul>
+                    <li>ease</li>
+                    <span>specifies a transition effect with a slow start, then fast, then end slowly (this is default)</span>
+                    <li>linear</li>
+                    <span>specifies a transition effect with the same speed from start to end</span>
+                    <li>ease-in</li>
+                    <span> specifies a transition effect with a slow start</span>
+                    <li>ease-out</li>
+                    <span>specifies a transition effect with a slow end</span>
+                    <li>ease-in-out</li>
+                    <span>specifies a transition effect with a slow start and end</span>
+                    <li>cubic-bezier(n,n,n,n)</li>
+                    <span>lets you define your own values in a cubic-bezier function</span>
+                </ul>
+                <p><br>
+                    The following example shows some of the different speed curves that can be used: <br>
+                </p>
+                <span class="cb"><br>
+                    #div1 { transition-timing-function : linear; } <br>
+                    #div2 { transition-timing-function : ease; } <br>
+                    #div3 { transition-timing-function : ease-in; } <br>
+                    #div4 { transition-timing-function : ease-out; } <br>
+                    #div5 { transition-timing-function : ease-in-out; } <br>
+                </span><br>
+                <h1>Delay the Transition Effect</h1>
+                <p>
+                    The transition-delay property specifies a delay (in seconds) for the transition effect. <br>
+                    <br>
+                    The following example has a 1 second delay before starting: <br>
+                </p>
+                <span class="cb"><br>
+                    div { <br><br>
+                        transition-delay: 1s; <br>
+                    } <br><br>
+                </span>
+                <h1>Transition + Transformation</h1>
+                <p>
+                    The following example adds a transition effect to the transformation:
+                </p>
+                <span class="cb"><br>
+                    div {<br><br>
+                        transition: width 2s, height 2s, transform 2s; <br>
+                      } <br>
+                </span><br>
+                <h1>More Transition Examples</h1>
+                <p>
+                    The CSS transition properties can be specified one by one, like this: <br>
+                </p>
+                <span class="cb"> <br>
+                    div { <br><br>
+                        transition-property: width; <br>
+                        transition-duration: 2s; <br>
+                        transition-timing-function: linear; <br>
+                        transition-delay: 1s; <br>
+                      } <br>
+                </span>
+                <p>or by using the shorthand property transition: <br>                </p>
+                <span class="cb"> <br>
+                    div { <br><br>
+                        transition: width 2s linear 1s; <br>
+                      } <br>
+                </span><br>
+                <h1>CSS Transition Properties</h1>
+                <table>
+                    <tr>
+                        <th>Property</th>
+                        <th>Description</th>
+                    </tr>
+
+                    <tr>
+                        <td>transition</td>
+                        <td>A shorthand property for setting the four transition properties into a single property</td>
+                    </tr>
+
+                    <tr>
+                        <td>transition-delay</td>
+                        <td>Specifies a delay (in seconds) for the transition effect</td>
+                    </tr>
+
+                    <tr>
+                        <td>transition-duration</td>
+                        <td>Specifies how many seconds or milliseconds a transition effect takes to complete</td>
+                    </tr>
+
+                    <tr>
+                        <td>transition-property</td>
+                        <td>Specifies the name of the CSS property the transition effect is for</td>
+                    </tr>
+
+                    <tr>
+                        <td>transition-timing-function</td>
+                        <td>Specifies the speed curve of the transition effect</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <hr>
+        <!-- keyframes -->
+        <section id="keyframes">
+            <div class="keyframes">
+                <h1>Definition and Usage</h1>
+                <p>
+                    The <span class="cr">@keyframes</span> rule specifies the animation code.
+                    <br><br>
+                    The animation is created by gradually changing from one set of CSS styles to another.
+                    <br><br>
+                    During the animation, you can change the set of CSS styles many times.
+                    <br><br>
+                    Specify when the style change will happen in percent, or with the keywords "from" and "to", which is the same as 0% and 100%. 0% is the beginning of the animation, 100% is when the animation is complete.
+                    <br><br>
+                    <b class="cg">Tip:</b> For best browser support, you should always define both the 0% and the 100% selectors.
+                    <br><br>
+                    <b class="cg">Note:</b> Use the animation properties to control the appearance of the animation, and also to bind the animation to selectors.
+                    <br><br>
+                    <b class="cg">Note:</b> The <span class="cr">!important</span> rule is ignored in a keyframe <b>(See last example on this page).</b>
+                </p>
+                <h1>CSS Syntax</h1><br>
+                <span class="cb">@keyframes animationname{ <br><br>
+                    <i class="ck">-----</i>keyframes-selector{  <br><br>
+                        <i class="ck">---------</i>css-styles; <br>
+                    <i class="ck">-----</i>} <br>
+                } <br>
+                </span><br>
+                <h1>Property Values</h1><br>
+                <table>
+                    <tr>
+                        <th>Value</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>animationname</td>
+                        <td>Required. Defines the name of the animation.</td>
+                    </tr>
+                    <tr>
+                        <td>keyframes-selector</td>
+                        <td>
+                            Required. Percentage of the animation duration. <br>
+                            Legal values: <br><br>
+                            
+                            0-100% <br>
+                            from (same as 0%) <br>
+                            to (same as 100%) <br><br>
+                            
+                            <b class="cg">Note:</b> You can have many keyframes-selectors in one animation.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>css-styles</td>
+                        <td>Required. One or more legal CSS style properties</td>
+                    </tr>
+                </table><br>
+                <h1>More Examples</h1>
+                <ul>
+                    <li>Add many keyframe selectors in one animation:</li>
+                    <span class="cb"><br>
+                        @keyframes mymove { <br><br>
+                            0%   {top: 0px;} <br>
+                            25%  {top: 200px;} <br>
+                            50%  {top: 100px;} <br>
+                            75%  {top: 200px;} <br>
+                            100% {top: 0px;} <br>
+                        } <br>
+                    </span><br>
+                    <li>Change many CSS styles in one animation:</li>
+                    <span class="cb"><br>
+                        @keyframes mymove { <br><br>
+                            0%   {top: 0px; background: red; width: 100px;} <br>
+                            100% {top: 200px; background: yellow; width: 300px;} <br>
+                        } <br>
+                    </span><br>
+                    <li>Many keyframe selectors with many CSS styles:</li>
+                    <span class="cb"> <br>
+                        @keyframes mymove { <br><br>
+                            0%   {top: 0px; left: 0px; background: red;} <br>
+                            25%  {top: 0px; left: 100px; background: blue;} <br>
+                            50%  {top: 100px; left: 100px; background: yellow;} <br>
+                            75%  {top: 100px; left: 0px; background: green;} <br>
+                            100% {top: 0px; left: 0px; background: red;} <br>
+                        } <br>
+                    </span><br>
+                    <li><b class="cg">Note:</b> The <b>!important</b> rule is ignored in a keyframe:</li>
+                    <span class="cb"> <br>
+                        @keyframes myexample { <br><br>
+                            from { top : 0px ; } <br>
+                            50%  { top : 100px <i class="cr">!important</i>; } <b class="cg">/* ignored */ </b><br>
+                            to   { top : 200px ; } <br>
+                        } <br>
+                    </span><br>
+                </ul>
+            </div>
+        </section>
+
+        <hr>
+        <!-- animations -->
+        <section id="animations">
+            <div class="animations">
+                <h1>CSS Animations</h1>
+                <p>In this section you will learn about the following properties:</p>
+                <ul>
+                    <li>@keyframes</li>
+                    <li>animation-name</li>
+                    <li>animation-duration</li>
+                    <li>animation-delay</li>
+                    <li>animation-iteration-count</li>
+                    <li>animation-direction</li>
+                    <li>animation-timing-function</li>
+                    <li>animation-fill-mode</li>
+                    <li>animation</li>
+                </ul><br>
+                <h1>What are CSS Animations?</h1>
+                <p>
+                    An animation lets an element gradually change from one style to another.  <br>
+                    <br>
+                    You can change as many CSS properties you want, as many times as you want. <br>
+                    <br>
+                    To use CSS animation, you must first specify some keyframes for the animation. <br>
+                    <br>
+                    Keyframes hold what styles the element will have at certain times. <br>
+                </p> <br>
+                <h1>The @keyframes Rule</h1>
+                <p>
+                    When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times. <br><br>
+                    To get an animation to work, you must bind the animation to an element. <br><br>
+                    The following example binds the "example" animation to the «div» element. <br><br>
+                    The animation will last for 4 seconds, and it will gradually change the background-color of the «div» element from "red" to "yellow": <br>
+                </p>
+                <span class="cb">
+                    <i class="cg">/* The animation code */</i> <br>
+                    @keyframes example { <br><br>
+                    from {background-color: red;} <br>
+                    to {background-color: yellow;} <br>
+                    } <br><br>
+
+                    <i class="cg">/* The element to apply the animation to */</i> <br>
+                    div { <br><br>
+                    width: 100px; <br>
+                    height: 100px; <br>
+                    background-color: red; <br>
+                    animation-name: example; <br>
+                    animation-duration: 4s; <br><br>
+                    } <br>
+                </span><br>
+                <p>
+                    <b class="cg">Note:</b> The <i class="cr">animation-duration</i> property defines how long an animation should take to complete. 
+                    If the <i class="cr">animation-duration</i> property is not specified, no animation will occur, 
+                    because the default value is 0s <b> (0 seconds).</b> <br><br>
+                    In the example above we have specified when the style will change by using the keywords "from" and "to" (which represents 0% (start) and 100% (complete)). <br><br>
+                    It is also possible to use percent. By using percent, you can add as many style changes as you like. <br><br>
+                    The following example will change the <b>background-color</b> of the «div» element when the animation is 25% complete,
+                    50% complete, and again when the animation is 100% complete: <br><br>
+                </p>
+                <span class="cb">
+                    <i class="cg">/* The animation code */</i><br>
+                    @keyframes example { <br><br>
+                    0%   {background-color: red;} <br>
+                    25%  {background-color: yellow;} <br>
+                    50%  {background-color: blue;} <br>
+                    100% {background-color: green;} <br><br>
+                    } <br>
+                    <br>
+                    <i class="cg">/* The element to apply the animation to */</i> <br>
+                    div { <br> <br>
+                    width: 100px; <br>
+                    height: 100px; <br>
+                    background-color: red; <br>
+                    animation-name: example; <br>
+                    animation-duration: 4s; <br><br>
+                    } <br>
+                </span><br>
+                <p>
+                    The following example will change both the <b>background-color </b>and the position of the «div» element when the animation is 25% complete, 50% complete, and again when the animation is 100% complete: <br>
+                </p>
+                <span class="cb">
+                    <i class="cg">/* The animation code */</i> <br>
+                    @keyframes example { <br><br>
+                    0%   {background-color:red; left:0px; top:0px;} <br>
+                    25%  {background-color:yellow; left:200px; top:0px;} <br>
+                    50%  {background-color:blue; left:200px; top:200px;} <br>
+                    75%  {background-color:green; left:0px; top:200px;} <br>
+                    100% {background-color:red; left:0px; top:0px;} <br><br>
+                    } <br>
+                    <br>
+                    <i class="cg">/* The element to apply the animation to */</i> <br>
+                    div { <br><br>
+                    width: 100px; <br>
+                    height: 100px; <br>
+                    position: relative; <br>
+                    background-color: red; <br>
+                    animation-name: example; <br>
+                    animation-duration: 4s; <br><br>
+                    } <br>
+                </span><br>
+                <h1>Delay an Animation</h1>
+                <p>
+                    The animation-delay property specifies a delay for the start of an animation. <br>
+                    <br>
+                    The following example has a 2 seconds delay before starting the animation: <br><br>
+                </p>
+                <span class="cb"> <br>
+                    div { <br><br>
+                        width: 100px; <br>
+                        height: 100px; <br>
+                        position: relative; <br>
+                        background-color: red; <br>
+                        animation-name: example; <br>
+                        animation-duration: 4s; <br>
+                        animation-delay: 2s; <br><br>
+                      } <br>
+                </span>
+                <p>
+                    Negative values are also allowed. If using negative values, the animation will start as if it had already been playing for <b>N</b> seconds. <br>
+                    <br>
+                    In the following example, the animation will start as if it had already been playing for 2 seconds: <br>
+                </p>
+                <span class="cb"> <br>
+                    div { <br><br>
+                        width: 100px; <br>
+                        height: 100px; <br>
+                        position: relative; <br>
+                        background-color: red; <br>
+                        animation-name: example; <br>
+                        animation-duration: 4s; <br>
+                        animation-delay: -2s; <br><br>
+                    } <br>
+                </span><br>
+                <h1>Set How Many Times an Animation Should Run</h1>
+                <p>
+                    The animation-iteration-count property specifies the number of times an animation should run. <br>
+                    <br>
+                    The following example will run the animation 3 times before it stops: <br><br>
+                </p>
+                <span class="cb"> <br>
+                    div { <br><br>
+                        width: 100px; <br>
+                        height: 100px; <br>
+                        position: relative; <br>
+                        background-color: red; <br>
+                        animation-name: example; <br>
+                        animation-duration: 4s; <br>
+                        animation-iteration-count: 3; <br><br>
+                      } <br>
+                </span>
+                <p><br>
+                    The following example uses the value "alternate-reverse" to make the animation run backwards first, then forwards: <br>
+                </p>
+                <span class="cb"> <br>
+                    div { <br><br>
+                        width: 100px; <br>
+                        height: 100px; <br>
+                        position: relative; <br>
+                        background-color: red; <br>
+                        animation-name: example; <br>
+                        animation-duration: 4s; <br>
+                        animation-iteration-count: 2; <br>
+                        animation-direction: alternate-reverse; <br><br>
+                      } <br>
+                </span><br>
+                <h1>Specify the Speed Curve of the Animation</h1>
+                <p>
+                    The animation-timing-function property specifies the speed curve of the animation. <br>
+                    <br>
+                    The animation-timing-function property can have the following values: <br>
+                    <br>
+                    1. <b class="cr">ease</b> - Specifies an animation with a slow start, then fast, then end slowly (this is default) <br>
+                    2. <b class="cr">linear</b> - Specifies an animation with the same speed from start to end <br>
+                    3. <b class="cr">ease-in</b> - Specifies an animation with a slow start <br>
+                    4. <b class="cr">ease-out </b>- Specifies an animation with a slow end <br>
+                    5. <b class="cr">ease-in-out </b>- Specifies an animation with a slow start and end <br>
+                    6. <b class="cr">cubic-bezier(n,n,n,n)</b> - Lets you define your own values in a cubic-bezier function <br><br>
+                    The following example shows some of the different speed curves that can be used: <br>
+                </p>
+                <span class="cb"> <br>
+                    #div1 {animation-timing-function: linear;} <br>
+                    #div2 {animation-timing-function: ease;} <br>
+                    #div3 {animation-timing-function: ease-in;} <br>
+                    #div4 {animation-timing-function: ease-out;} <br>
+                    #div5 {animation-timing-function: ease-in-out;} <br>
+                </span><br>
+                <h1>Specify the fill-mode For an Animation</h1>
+                <p>
+                    CSS animations do not affect an element before the first keyframe is played or after the last keyframe is played. The animation-fill-mode property can override this behavior. <br>
+                    <br>
+                    The animation-fill-mode property specifies a style for the target element when the animation is not playing (before it starts, after it ends, or both). <br>
+                    <br>
+                    The animation-fill-mode property can have the following values: <br>
+                    <br>
+                    1. <b class="cr">none</b> - Default value. Animation will not apply any styles to the element before or after it is executing <br>
+                    2. <b class="cr">forwards</b> - The element will retain the style values that is set by the last keyframe (depends on animation-direction and animation-iteration-count) <br>
+                    3. <b class="cr">backwards</b> - The element will get the style values that is set by the first keyframe (depends on animation-direction), and retain this during the animation-delay period <br>
+                    4. <b class="cr">both</b> - The animation will follow the rules for both forwards and backwards, extending the animation properties in both directions <br>
+                    <br>
+                    The following example lets the «div» element retain the style values from the last keyframe when the animation ends: <br>
+                </p>
+                <span class="cb"> <br>
+                    div { <br><br>
+                        width: 100px; <br>
+                        height: 100px; <br>
+                        background: red; <br>
+                        position: relative; <br>
+                        animation-name: example; <br>
+                        animation-duration: 3s; <br>
+                        animation-fill-mode: forwards; <br><br>
+                      } <br>
+                </span><br>
+                <p>
+                    The following example lets the «div» element get the style values set by the first keyframe before the animation starts (during the animation-delay period): <br>
+                </p><br>
+                <span class="cb">
+                    div { <br><br>
+                        width: 100px; <br>
+                        height: 100px; <br>
+                        background: red; <br>
+                        position: relative; <br>
+                        animation-name: example; <br>
+                        animation-duration: 3s; <br>
+                        animation-delay: 2s; <br>
+                        animation-fill-mode: backwards; <br><br>
+                    } <br>
+                </span>
+                <p><br>
+                    The following example lets the «div» element get the style values set by the first keyframe before the animation starts,
+                    and retain the style values from the last keyframe when the animation ends:
+                </p><br>
+                <span class="cb">
+                    div { <br><br>
+                        width: 100px; <br>
+                        height: 100px; <br>
+                        background: red; <br>
+                        position: relative; <br>
+                        animation-name: example; <br>
+                        animation-duration: 3s; <br>
+                        animation-delay: 2s; <br>
+                        animation-fill-mode: both; <br><br>
+                    } <br>
+                </span><br><br>
+                <h1>Animation Shorthand Property</h1>
+                <p>The example below uses six of the animation properties: <br></p>
+                <span class="cb"> <br>
+                    div { <br><br>
+                        animation-name: example; <br>
+                        animation-duration: 5s; <br>
+                        animation-timing-function: linear; <br>
+                        animation-delay: 2s; <br>
+                        animation-iteration-count: infinite; <br>
+                        animation-direction: alternate; <br><br>
+                    }   <br>
+                </span>
+                <p>The same animation effect as above can be achieved by using the shorthand <i class="cr">animation</i> property: <br></p>
+                <span class="cb">
+                    div { <br><br>
+                        <b class="cr">animation</b>: example 5s linear 2s infinite alternate; <br>
+                    } <br>
+                </span><br>
+                <h1>CSS Animation Properties</h1>
+                <p>The following table lists the @keyframes rule and all the CSS animation properties: <br><br></p>
+                <table>
+                    <tr>
+                        <th>Property</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>@keyframes</td>
+                        <td>Specifies the animation code</td>
+                    </tr>
+                    <tr>
+                        <td>animation</td>
+                        <td>A shorthand property for setting all the animation properties</td>
+                    </tr>
+                    <tr>
+                        <td>animation-delay</td>
+                        <td>Specifies a delay for the start of an animation</td>
+                    </tr>
+                    <tr>
+                        <td>animation-direction</td>
+                        <td>Specifies whether an animation should be played forwards, backwards or in alternate cycles</td>
+                    </tr>
+                    <tr>
+                        <td>animation-duration</td>
+                        <td>Specifies how long time an animation should take to complete one cycle</td>
+                    </tr>
+                    <tr>
+                        <td>animation-fill-mode</td>
+                        <td>Specifies a style for the element when the animation is not playing (before it starts, after it ends, or both)</td>
+                    </tr>
+                    <tr>
+                        <td>animation-iteration-count</td>
+                        <td>Specifies the number of times an animation should be played</td>
+                    </tr>
+                    <tr>
+                        <td>animation-name</td>
+                        <td>Specifies the name of the @keyframes animation</td>
+                    </tr>
+                    <tr>
+                        <td>animation-play-state</td>
+                        <td>Specifies whether the animation is running or paused</td>
+                    </tr>
+                    <tr>
+                        <td>animation-timing-function</td>
+                        <td>Specifies the speed curve of the animation</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+
+        <footer>
+            
+        </footer>
+    </body>
+</html>
