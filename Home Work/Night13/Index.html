@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Night13</title>
+    </head>
+
+    <body>
+
+        <!-- header -->
+        <header class="header">
+            <h1>Operators</h1>
+            <p>Remembering childhood</p>
+            <ul>
+                <li><a href="#Arithmetic">Arithmetic</a></li>
+                <li><a href="#Assignment">Assignment</a></li>
+                <li><a href="#Comparison">Comparison</a></li>
+                <li><a href="#Logical">Logical</a></li>
+            </ul>
+        </header>
+
+        
+        <!-- Arithmetic -->
+        <section id="Arithmetic" class="Arithmetic">
+            <h1>Arithmetic Operators </h1>
+            <p>
+            Remember basic arithmetic from school? These work just like those. <br>
+            </p>
+            <h3>Arithmetic Operators</h3>
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>Example</th>
+                        <th>Name</th>
+                        <th>Result</th>
+                    </tr>
+                    <tr>
+                        <td>+$a</td>
+                        <td>Identity</td>
+                        <td>Conversion of $a to int or float as appropriate.</td>
+                    </tr>
+                    <tr>
+                        <td>-$a</td>
+                        <td>Negation</td>
+                        <td>Opposite of $a.</td>
+                    </tr>
+                    <tr>
+                        <td>$a + $b	</td>
+                        <td>Addition</td>
+                        <td>Sum of $a and $b.</td>
+                    </tr>
+                    <tr>
+                        <td>$a - $b	</td>
+                        <td>Subtraction</td>
+                        <td>Difference of $a and $b.</td>
+                    </tr>
+                    <tr>
+                        <td>$a * $b	</td>
+                        <td>Multiplication</td>
+                        <td>Product of $a and $b.</td>
+                    </tr>
+                    <tr>
+                        <td>$a / $b	</td>
+                        <td>Division</td>
+                        <td>Quotient of $a and $b.</td>
+                    </tr>
+                    <tr>
+                        <td>$a % $b	</td>
+                        <td>Modulo</td>
+                        <td>Remainder of $a divided by $b.</td>
+                    </tr>
+                    <tr>
+                        <td>$a ** $b</td>
+                        <td>Exponentiation</td>
+                        <td>Result of raising $a to the $b'th power.</td>
+                    </tr>
+                </table>
+            </div><br>
+            <p>
+                The division operator ("/") returns a float value unless the two operands are integers (or strings that get converted to integers) and the numbers are evenly divisible, in which case an integer value will be returned.  <br>
+                <br>
+                Operands of modulo are converted to int before processing. <br>
+                <br>
+                The result of the modulo operator % has the same sign as the dividend — that is, the result of $a % $b will have the same sign as $a. For example: <br> 
+            </p>
+
+            <p>
+                <span class="cb">«?php</span> <br>
+                <br>
+                <sapn class="cg">
+                echo (5 % 3) . <i class="cr"> "\n"</i> ; <i class="co">// prints 2 </i><br>
+                echo (5 % -3) . <i class="cr"> "\n"</i> ; <i class="co">// prints 2 </i><br>
+                echo (-5 % 3) . <i class="cr"> "\n"</i> ; <i class="co">// prints -2</i> <br>
+                echo (-5 % -3) . <i class="cr"> "\n"</i> ; <i class="co">// prints -2</i> <br>
+                </sapn><br>
+                <span class="cb">?»</span><br>
+            </p>
+            <h1>Incrementing/Decrementing Operators </h1>
+            <p>
+                PHP supports pre- and post-increment and decrement operators. Those unary operators allow to increment or decrement the value by one.
+            </p>
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>Example</th>
+                        <th>Name</th>
+                        <th>Effect</th>
+                    </tr>
+                    <tr>
+                        <td>++$a</td>
+                        <td>Pre-increment</td>
+                        <td>Increments $a by one, then returns $a.</td>
+                    </tr>
+                    <tr>
+                        <td>$a++</td>
+                        <td>Post-increment</td>
+                        <td>Returns $a, then increments $a by one.</td>
+                    </tr>
+                    <tr>
+                        <td>--$a</td>
+                        <td>Pre-decrement</td>
+                        <td>Decrements $a by one, then returns $a.</td>
+                    </tr>
+                    <tr>
+                        <td>$a--</td>
+                        <td>Post-decrement</td>
+                        <td>Returns $a, then decrements $a by one.</td>
+                    </tr>
+                </table>    
+            </div><br>
+            <p>
+                Here's a simple example script: <br><br>
+                <span class="cb">
+                    «?php
+                    <span class="cg"> <br>
+                        echo <i class="cr"> 'Post-increment:'</i>, PHP_EOL; <br>
+                        $a = 5; <br>
+                        var_dump($a++); <br>
+                        var_dump($a); <br>
+                        <br>
+                        echo <i class="cr">'Pre-increment:'</i> , PHP_EOL; <br>
+                        $a = 5; <br>
+                        var_dump(++$a); <br>
+                        var_dump($a); <br>
+                        <br>
+                        echo <i class="cr">'Post-decrement:'</i> , PHP_EOL; <br>
+                        $a = 5; <br>
+                        var_dump($a--); <br>
+                        var_dump($a); <br>
+                        <br>
+                        echo <i class="cr"> 'Pre-decrement:'</i>, PHP_EOL; <br>
+                        $a = 5; <br>
+                        var_dump(--$a); <br>
+                        var_dump($a); <br>
+                    </span>    
+                    ?»
+                </span><br><br>
+
+                The above example will output: <br><br>
+
+                <span>
+                    Post-increment: <br>
+                    int(5) <br>
+                    int(6) <br><br>
+                    Pre-increment: <br>
+                    int(6) <br>
+                    int(6) <br><br>
+                    Post-decrement: <br>
+                    int(5) <br>
+                    int(4) <br><br>
+                    Pre-decrement: <br>
+                    int(4) <br>
+                    int(4) <br><br>
+                </span> <br>
+                <br>
+                <b class="cg">Tip : </b>
+                The increment and decrement operators have no effect on values of type <i class="cr">bool </i>. 
+            </p>
+        </section>
+
+
+        <!-- Assignment Operators -->
+        <section id="Assignment" class="Assignment">
+            <h1>Assignment Operators</h1>
+            <p>
+                The PHP assignment operators are used with numeric values to write a value to a variable. <br>
+                The basic assignment operator is "=". <br>
+                Your first inclination might be to think of this as "equal to". Don't ! <br>
+                It really means that the left operand gets set to the value of the expression on the right (that is, "gets set to"). <br>
+            </p><br>
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>Assignment</th>
+                        <th>Same as...</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>x = y</td>
+                        <td>x = y</td>
+                        <td>The left operand gets set to the value of the expression on the right</td>
+                    </tr>
+                    <tr>
+                        <td>x += y</td>
+                        <td>x = x + y</td>
+                        <td>Addition</td>
+                    </tr>
+                    <tr>
+                        <td>x -= y</td>
+                        <td>x = x - y</td>
+                        <td>Subtraction</td>
+                    </tr>
+                    <tr>
+                        <td>x *= y</td>
+                        <td>x = x * y</td>
+                        <td>Multiplication</td>
+                    </tr>
+                    <tr>
+                        <td>x /= y</td>
+                        <td>x = x / y</td>
+                        <td>Division</td>
+                    </tr>
+                    <tr>
+                        <td>x %= y</td>
+                        <td>x = x % y</td>
+                        <td>Modulus</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+
+        <!-- Comparison Operators -->
+        <section id="Comparison" class="Comparison">
+            <h1>Comparison Operators</h1>
+            <p>The PHP comparison operators are used to compare two values (number or string): <br></p>
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>Operator</th>
+                        <th>Name</th>
+                        <th>Result</th>
+                    </tr>
+                    <tr>
+                        <td>$x == $y</td>
+                        <td>Equal</td>
+                        <td>Returns true if $x is equal to $y</td>
+                    </tr>
+                    <tr>
+                        <td>$x === $y</td>
+                        <td>Identical</td>
+                        <td>Returns true if $x is equal to $y, and they are of the same type</td>
+                    </tr>
+                    <tr>
+                        <td>$x != $y</td>
+                        <td>Not equal</td>
+                        <td>Returns true if $x is not equal to $y</td>
+                    </tr>
+                    <tr>
+                        <td>$x <> $y</td>
+                        <td>Not equal</td>
+                        <td>Returns true if $x is not equal to $y</td>
+                    </tr>
+                    <tr>
+                        <td>$x !== $y</td>
+                        <td>Not identical</td>
+                        <td>Returns true if $x is not equal to $y, or they are not of the same type</td>
+                    </tr>
+                    <tr>
+                        <td>$x > $y</td>
+                        <td>Greater than</td>
+                        <td>Returns true if $x is greater than $y</td>
+                    </tr>
+                    <tr>
+                        <td>$x < $y</td>
+                        <td>Less than</td>
+                        <td>Returns true if $x is less than $y</td>
+                    </tr>
+                    <tr>
+                        <td>$x >= $y</td>
+                        <td>Greater than or equal to</td>
+                        <td>Returns true if $x is greater than or equal to $y</td>
+                    </tr>
+                    <tr>
+                        <td>$x <= $y</td>
+                        <td>Less than or equal to</td>
+                        <td>Returns true if $x is less than or equal to $y</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+
+        <!-- Logical Operators -->
+        <section id="Logical" class="Logical">
+            <h1>Logical Operators</h1>
+            <p>The PHP logical operators are used to combine conditional statements. <br></p>
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>operator</th>
+                        <th>Name</th>
+                        <th>Result</th>
+                    </tr>
+                    <tr>
+                        <td>$x and $y</td>
+                        <td>And</td>
+                        <td>True if both $x and $y are true</td>
+                    </tr>
+                    <tr>
+                        <td>$x or $y</td>
+                        <td>Or</td>
+                        <td>True if either $x or $y is true</td>
+                    </tr>
+                    <tr>
+                        <td>$x xor $y</td>
+                        <td>Xor</td>
+                        <td>True if either $x or $y is true, but not both</td>
+                    </tr>
+                    <tr>
+                        <td>$x && $y</td>
+                        <td>And</td>
+                        <td>True if both $x and $y are true</td>
+                    </tr>
+                    <tr>
+                        <td>$x || $y</td>
+                        <td>Or</td>
+                        <td>True if either $x or $y is true</td>
+                    </tr>
+                    <tr>
+                        <td>!$x</td>
+                        <td>Not</td>
+                        <td>True if $x is not true</td>
+                    </tr>
+                </table>
+            </div><br><br>
+            <p>
+                <b class="cg">Note: </b>
+                The reason for the two different variations of "and" and "or" operators is that they operate at different precedences. <br><br>
+            </p>
+        </section>
+    </body>
+</html>

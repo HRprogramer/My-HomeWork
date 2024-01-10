@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Bitter:wght@400;600&family=Pacifico&family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Pacifico&family=Rubik+Glitch&display=swap');
+
+
+:root{
+
+    --font1:'Bitter', serif;
+    --font2:'Pacifico', cursive;
+    --font3:'Arvo', serif;
+    --bgcolor1:#EEF0E5;
+    --bgcolor2:#7077A1;
+    --color:#2D3250;
+}
+
+body{
+
+    margin: 0;
+    background: var(--bgcolor1);
+    font-family: var(--font3);
+    color: var(--color);
+    letter-spacing: 1px;
+}
+
+.cb{
+    color: blue;
+}
+
+.cg{
+    color: green;
+}
+
+.co{
+    color: orange;
+}
+
+.cr{
+    color: red;
+}
+
+
+/* ********************** Header ********************** */
+
+.header{
+
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--bgcolor2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.header h1{
+    
+    margin: 10px 0 0;
+    font-family: var(--font1);
+}
+
+.header p{
+    margin: 5px 0 0;
+    font-size: 20px;
+}
+
+.header ul{
+    border: none;
+    margin: 5px 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    width: 80%;
+    padding: 5px 20px 0;
+}
+
+.header li{
+
+    list-style-type: none;
+    
+}
+
+.header a {
+
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #EEF5FF;
+}
+
+.header a:hover{
+
+    color: #52D3D8;
+}
+
+
+
+/* *************** Section ************** */
+
+
+section {
+
+    margin: 0;
+    padding: 5% 3%;
+    z-index: 1;
+} 
+
+.Arithmetic h1,
+.Assignment h1,
+.Logical h1,
+.Comparison h1{
+
+    text-align: center;
+    border-bottom:1px dashed #2D3250 ;
+    padding: 10px;
+    font-family: var(--font1);
+    margin-top: 15vh;
+}
+
+.Arithmetic p,
+.Assignment p,
+.Logical p,
+.Comparison p{
+
+    line-height: 1.8;
+}
+
+.Arithmetic h3{
+
+    margin-top: 30px;
+    text-align: center;
+    font-family: var(--font1);
+    font-size: 20px;
+
+}
+
+.table {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.table table{
+
+    border: 2px solid var(--color);
+    background: #EEF5FF;
+    border-collapse:collapse ;
+}
+
+.table td ,
+.table th{
+
+    border: 2px dashed #7077A1;
+    text-align: center;
+    padding: 5px;
+}
+
+.table td:nth-child(3){
+
+
+    text-align: start;
+}
+
+.table tr:nth-child(odd){
+
+    background: #FAEED1;
+}
+
+.table tr:nth-child(1){
+
+    background: #BFCFE7;
+
+}
+
+
