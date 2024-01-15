@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Night 14</title>
+    </head>
+
+    <body>
+        <header>
+            <main>
+                <div class="hp">
+                    <h1>Arrays in PHP</h1>
+                    <p>I want them all together!</p>
+                </div>
+
+                <!-- <div class="navigation">
+                    <ul>
+                        <li><a href="#Indexed">Indexed</a></li>
+                        <li><a href="#Associative ">Associative </a></li>
+                        <li><a href="#Multidimensional">Multidimensional</a></li>
+                    </ul>
+                </div> -->
+            </main>    
+        </header>
+
+
+        <section>
+            <h1>Arrays</h1>
+            An array is a special variable that can hold many values under a single name, and you can access the values by referring to an index number or name. <br>
+            <h3>PHP Array Types</h3>
+            <p>In PHP, there are three types of arrays: <br></p>
+            <ul><br>
+                <li><b>Numeric arrays</b> - Arrays with a numeric index</li>
+                <li><b>Associative arrays</b> - Arrays with named keys</li>
+                <li><b>Multidimensional arrays</b> - Arrays containing one or more arrays</li>
+            </ul><br><br>
+
+            <h1>Working With Arrays</h1>
+            <p>In this tutorial you will learn how to work with arrays, including: <br></p>
+            <br>
+            <ul>
+                <li><b> Create Arrays </b></li>
+                <li><b> Access Arrays </b></li>
+                <li><b> Update Arrays </b></li>
+                <li><b> Remove Array Items </b></li>
+                <li><b> Sort Arrays </b></li>
+            </ul><br><br>
+            
+            <h1>Array Items</h1>
+            <p>
+                Array items can be of any data type. <br>
+                <br>
+                The most common are strings and numbers (int, float), but array items can also be objects, functions or even arrays. <br>
+                <br>
+                You can have different data types in the same array. <br>
+                Exaple: <br>
+                Array items of four different data types: <br>
+
+                <span class="cb"><br>
+                    $myArr = array("Volvo", 15, ["apples", "bananas"], myFunction); <br>
+                </span>
+            </p><br><br>
+
+            <div>
+                <h1>Numeric arrays</h1>
+                <p>
+                    In indexed arrays each item has an index number. <br>
+                    By default, the first item has index 0, the second item has item 1, etc. <br>
+
+                    <span class="cb"><br>
+                        «?php <br>
+                        $names = array("David", "Amy", "John"); <br>
+                        echo $names[1]; <br>
+                        ?><br>
+                    </span><br>
+                    <b class="cg">Note : </b>Remember that the first element in an array has the index of 0, not 1. <br>      
+                </p><br><br>
+            </div>
+
+            <div>
+                <h1>Associative Arrays</h1>
+                <p> 
+                    Associative arrays are arrays that use named keys that you assign to them. <br>
+                    There are two ways to create an associative array: <br><br>
+                    <span class="cb">
+                        $people = array("David"=>"27", "Amy"=>"21", "John"=>"42"); <br>
+                        <i class="cg">// or</i> <br>
+                        $people['David'] = "27"; <br>
+                        $people['Amy'] = "21"; <br>
+                        $people['John'] = "42"; <br>
+                    </span><br>
+                    In the first example, note the use of the => signs in assigning values to the named keys . <br>
+                    Use the named keys to access the array's members. <br>
+                    <br>
+                    <span class="cb">
+                        «?php  <br>
+                        $people = array("David"=>"27", "Amy"=>"21", "John"=>"42");<br>
+                        echo $people['Amy']; <br>
+                        ?> <br>
+                    </span>    
+                </p><br><br>
+            </div>
+
+            <div>
+                <h1>Multi-Dimensional Arrays</h1>
+                <p>
+                    A multi-dimensional array contains one or more arrays. <br>
+                    The dimension of an array indicates the number of indices you would need to select an element. <br><br>
+                    • <b>For a two-imensional array: </b>you need two indices to select an element. <br>
+                    • <b>For a three-dimensional array: </b>you need three indices to select an element Arrays more than three levels deep are difficult to manage. <br>
+                    <br>
+                    Let's create a two-dimensional array that contains 3 arrays. <br>
+                    <span class="cb"><br>
+                        $people = array(<br>
+                        'online'=>array('David', 'Amy'), <br>
+                        'offline'=>array('John', 'Rob', 'Jack'), <br>
+                        'away'=>array('Arthur', 'Daniel') <br>
+                        ); <br>
+                    </span><br>
+                    Now the two-dimensional $people array contains 3 arrays, and it has two indices: row and column. <br>
+                    To access the elements of the $people array, we must point to the two indices: <br><br>
+                    <span class="cb">
+                        echo $people['online'][0]; <br>
+                        echo "«br»"; <br>
+                        echo $people['away'][1]; <br>
+                    </span><br>
+                    <b class="cg">Note : </b>The arrays in the multi-dimensional array can be both numeric and associative. <br>
+                </p>
+            </div>
+        </section>
+    </body>
+</html>
