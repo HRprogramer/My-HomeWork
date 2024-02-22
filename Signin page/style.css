@@ -1,0 +1,183 @@
+:root{
+    --bgcolor1 : darkblue;
+    --bgcolor2 : #070F2B;
+    --fontcolor : gray;
+    --inputbgcolor : aqua;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--fontcolor);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    background: #ccc;
+}
+
+section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    width: 450px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 8;
+    padding: 5px;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    height: 800px;
+    width: 300px;
+    background: linear-gradient(aqua,purple);
+    animation: animate 4s linear infinite;
+}
+
+section::after{
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: #999;
+    border-radius:10px ;
+}
+
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(350deg);
+    }
+}
+
+h1{
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+form{
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff;
+}
+
+.form{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-item{
+    position: relative;
+    margin-bottom: 15px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.guid{
+    padding-top: 7px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.guid h5{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.guid h5 a{
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.guid h5 a:hover{
+    color: black;
+}
+
+.form-item input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ccc;
+    transition: all .3s ease;
+    padding: 0 15px;
+    border-radius: 10px;
+}
+
+.form-item input:focus{
+    border-color: blue;
+}
+
+.form-item label{
+    position: absolute;
+    cursor: text;
+    z-index: 2;
+    top: 13px;
+    left: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    background: #fff;
+    padding: 0 10px;
+    color: #999;
+    transition: all .3s ease;
+}
+
+.form-item input:focus + label,
+.form-item input:valid + label{
+    font-size: 11px;
+    top: -5px;
+}
+
+.form-item input:focus + label{
+    color: blue;
+}
+
+#submit{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+input[type="submit"]{
+    width: 50%;
+    background: aquamarine;
+    font-size: 20px;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+input[type="submit"]:hover{
+    background: #ccc;
+}
